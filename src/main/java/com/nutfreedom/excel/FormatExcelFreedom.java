@@ -1,4 +1,4 @@
-package com.nutfreedom;
+package com.nutfreedom.excel;
 
 import java.util.HashMap;
 import java.util.LinkedHashMap;

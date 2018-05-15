@@ -1,4 +1,4 @@
-package com.nutfreedom;
+package com.nutfreedom.excel;
 
 import java.awt.image.BufferedImage;
 import java.io.ByteArrayOutputStream;
@@ -12,6 +12,11 @@ import javax.imageio.ImageIO;
 import javax.servlet.ServletOutputStream;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.jsp.JspWriter;
+
+import com.nutfreedom.utilities.CheckFreedom;
+import com.nutfreedom.utilities.ParseNumberFreedom;
+import com.nutfreedom.utilities.SplitFreedom;
+import com.nutfreedom.utilities.SubstringFreedom;
 
 import jxl.CellView;
 import jxl.Workbook;

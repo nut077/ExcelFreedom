@@ -1,2 +1,4 @@
 /.idea
-ExcelFreedom.iml
+*.iml
+/target
+pom.xml.versionsBackup
