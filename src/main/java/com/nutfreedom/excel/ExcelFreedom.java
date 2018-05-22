@@ -32,9 +32,9 @@ public class ExcelFreedom {
     private LinkedHashMap<String, Integer> heightCell = new LinkedHashMap<>();
     private Vector<String> span = new Vector<>();
     private String table;
-    private String locationFile;
+    private String pathFile;
     private WritableWorkbook workbook;
-    private ServletOutputStream locationFileServlet;
+    private ServletOutputStream pathFileServlet;
     private int defaultFontSize = 10;
     private String defaultFormat = "border-center";
     private String defaultFontColor = "black";
@@ -57,20 +57,21 @@ public class ExcelFreedom {
     public ExcelFreedom() {
     }
 
-    public ExcelFreedom(String table, String locationFile) {
+    public ExcelFreedom(String pathFile, String filename, String table) {
+        this.pathFile = pathFile;
+        this.filename = filename;
         this.table = table;
-        this.locationFile = locationFile;
     }
 
-    public ExcelFreedom(String table, ServletOutputStream locationFileServlet) {
+    public ExcelFreedom(ServletOutputStream pathFileServlet, String table) {
         this.table = table;
-        this.locationFileServlet = locationFileServlet;
+        this.pathFileServlet = pathFileServlet;
         this.statusFile = false;
     }
 
-    public ExcelFreedom(String table, ServletOutputStream locationFileServlet, HttpServletResponse response, JspWriter out, String filename) {
+    public ExcelFreedom(ServletOutputStream pathFileServlet, HttpServletResponse response, JspWriter out, String filename, String table) {
         this.table = table;
-        this.locationFileServlet = locationFileServlet;
+        this.pathFileServlet = pathFileServlet;
         this.response = response;
         this.out = out;
         this.filename = filename;
@@ -86,11 +87,7 @@ public class ExcelFreedom {
     }
 
     public String getLocationFile() {
-        return locationFile;
-    }
-
-    public void setLocationFile(String locationFile) {
-        this.locationFile = locationFile;
+        return pathFile;
     }
 
     public int getDefaultFontSize() {
@@ -117,8 +114,24 @@ public class ExcelFreedom {
         this.defaultFontName = defaultFontName;
     }
 
+    public String getPathFile() {
+        return pathFile;
+    }
+
+    public void setPathFile(String pathFile) {
+        this.pathFile = pathFile;
+    }
+
     public int getDefaultHeight() {
         return defaultHeight;
+    }
+
+    public String getFilename() {
+        return filename;
+    }
+
+    public void setFilename(String filename) {
+        this.filename = filename;
     }
 
     public void setDefaultHeight(int defaultHeight) {
@@ -127,7 +140,7 @@ public class ExcelFreedom {
 
     private void setWorkbook() {
         try {
-            this.workbook = Workbook.createWorkbook(new File(this.locationFile));
+            this.workbook = Workbook.createWorkbook(new File(this.pathFile + "/" + filename + ".xls"));
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -135,7 +148,7 @@ public class ExcelFreedom {
 
     private void setWorkbookServlet() {
         try {
-            this.workbook = Workbook.createWorkbook(this.locationFileServlet);
+            this.workbook = Workbook.createWorkbook(this.pathFileServlet);
         } catch (IOException e) {
             e.printStackTrace();
         }
