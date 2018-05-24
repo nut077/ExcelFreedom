@@ -6,8 +6,7 @@
 ### Tutorial ExcelFreedom
 * รูปแบบการใช้งาน<br>
 ```<table></table>``` คือ 1 sheet ```<tr></tr>``` คือ 1 แถว ```<td></td>``` คือ 1 column
-```java 
-    StringBuilder table = new StringBuilder();
+    ```java StringBuilder table = new StringBuilder();
     table.append("<table>");
       table.append("<tr>");
         table.append("<td>A</td>");
