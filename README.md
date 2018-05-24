@@ -172,7 +172,7 @@
     ##### ผลลัพธ์ที่ได้คือ
     [![Capture.png](https://s9.postimg.cc/sjcchgo7z/Capture.png)](https://postimg.cc/image/iyspukyvv/)
     <br><br>
-    ใส่กรอบให้กับคอลัมน์บนและล่างแบบสองเส้น ใช้ border-tb-double
+    ใส่กรอบให้กับคอลัมน์บนและล่างแบบ 2 เส้น ใช้ border-tb-double
     - border-tb-double-left
     - border-tb-double-center
     - border-tb-double-right
@@ -188,4 +188,21 @@
 
     ##### ผลลัพธ์ที่ได้คือ
     [![Capture.png](https://s9.postimg.cc/ir52xvdkv/Capture.png)](https://postimg.cc/image/p4u614igr/)
+    <br><br>
+    ใส่กรอบให้กับคอลัมน์บน 1 เส้น และ ล่างแบบ 2 เส้น ใช้ border-tb-single-double
+    - border-tb-single-double-left
+    - border-tb-single-double-center
+    - border-tb-single-double-right
+    - border-tb-single-double-left-middle
+    - border-tb-single-double-center-middle
+    - border-tb-single-double-right-middle
+    - border-tb-single-double-left-top
+    - border-tb-single-double-center-top
+    - border-tb-single-double-right-top
+    - border-tb-single-double-orientation
+    - border-tb-single-double-orientation-middle
+    - border-tb-single-double-orientation-top
+
+    ##### ผลลัพธ์ที่ได้คือ
+    [![Capture.png](https://s31.postimg.cc/5d29phzh7/Capture.png)](https://postimg.cc/image/jji0kqac7/)
     <br><br>
