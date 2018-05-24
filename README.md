@@ -4,7 +4,7 @@
 [Tutorial.ExcelFreedom.pdf](https://github.com/nut077/ExcelFreedom/files/1987462/Tutorial.ExcelFreedom.pdf)
 
 ### Tutorial ExcelFreedom
-* รูปแบบการใช้งาน<br>
+* **รูปแบบการใช้งาน**<br>
 ```<table></table>``` คือ 1 sheet ```<tr></tr>``` คือ 1 แถว ```<td></td>``` คือ 1 column
     ```java
     StringBuilder table = new StringBuilder();
@@ -29,7 +29,7 @@
     [![Capture.png](https://s31.postimg.cc/oz427g9nf/Capture.png)](https://postimg.cc/image/5u0sxouzb/)
     <br><br>
 
-* เพิ่ม sheet<br>
+* **เพิ่ม sheet**<br>
 เพิ่ม tag ```<table></table>``` ขึ้นมาใหม่ก็จะได้ sheet ใหม่ขึ้นมา จำนวน sheet ขึ้นอยู่กับ tag ```<table>```<br>
 ตัวอย่างในที่นี้เราจะสร้าง 2 sheet
     ```java
@@ -51,3 +51,12 @@
     ```
     ##### ผลลัพธ์ที่ได้คือ
     [![Capture.png](https://s9.postimg.cc/cp66feunj/Capture.png)](https://postimg.cc/image/70zvoiqaz/)<br>
+    
+* **เปลี่ยนชื่อ sheet**<br>
+โดยใช้ tag ```<sheet>ชื่อ sheet</sheet>``` โดยใส่ไว้ต่อจาก ```<table>```
+    ```java
+    table.append("<table>");
+    table.append("<sheet>new sheet</sheet>");
+    ```
+    ##### ผลลัพธ์ที่ได้คือ
+    [![Capture.png](https://s9.postimg.cc/m8kgmxzxb/Capture.png)](https://postimg.cc/image/jr8pfog0r/)
