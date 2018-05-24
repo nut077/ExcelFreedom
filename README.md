@@ -136,7 +136,7 @@
     table.append("<td><format>orientation-top</format>orientation-top</td>");
     ```
     ##### ผลลัพธ์ที่ได้คือ
-    [![Capture.png](https://s31.postimg.cc/tvzpt56sr/Capture.png)](https://postimg.cc/image/4pyrmb5if/)
+    [![Capture.png](https://s31.postimg.cc/fqtwr70aj/Capture.png)](https://postimg.cc/image/lrrlo9mwn/)
     <br>
     - border-left
     - border-center
@@ -151,19 +151,19 @@
     - border-orientation-middle
     - border-orientation-top
     ```java
-    table.append("<td><format>border-left</format>left</td>");
-    table.append("<td><format>border-center</format>center</td>");
-    table.append("<td><format>border-right</format>right</td>");
-    table.append("<td><format>border-left-middle</format>left-middle</td>");
-    table.append("<td><format>border-center-middle</format>center-middle</td>");
-    table.append("<td><format>border-right-middle</format>right-middle</td>");
-    table.append("<td><format>border-left-top</format>left-top</td>");
-    table.append("<td><format>border-center-top</format>center-top</td>");
-    table.append("<td><format>border-right-top</format>right-top</td>");
-    table.append("<td><format>border-orientation</format>orientation</td>");
-    table.append("<td><format>border-orientation-middle</format>orientation-middle</td>");
-    table.append("<td><format>border-orientation-top</format>orientation-top</td>");
+    table.append("<td><format>border-left</format>border-left</td>");
+    table.append("<td><format>border-center</format>border-center</td>");
+    table.append("<td><format>border-right</format>border-right</td>");
+    table.append("<td><format>border-left-middle</format>border-left-middle</td>");
+    table.append("<td><format>border-center-middle</format>border-center-middle</td>");
+    table.append("<td><format>border-right-middle</format>border-right-middle</td>");
+    table.append("<td><format>border-left-top</format>border-left-top</td>");
+    table.append("<td><format>border-center-top</format>border-center-top</td>");
+    table.append("<td><format>border-right-top</format>border-right-top</td>");
+    table.append("<td><format>border-orientation</format>border-orientation</td>");
+    table.append("<td><format>border-orientation-middle</format>border-orientation-middle</td>");
+    table.append("<td><format>border-orientation-top</format>border-orientation-top</td>");
     ```
     ##### ผลลัพธ์ที่ได้คือ
-    [![Capture.png](https://s31.postimg.cc/tvzpt56sr/Capture.png)](https://postimg.cc/image/4pyrmb5if/)
+    [![Capture.png](https://s31.postimg.cc/q0wbqtnpn/Capture.png)](https://postimg.cc/image/4r8pfz7ev/)
     <br><br>
