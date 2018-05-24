@@ -26,12 +26,11 @@
     ```
     ##### ผลลัพธ์ที่ได้คือ
     [![Capture.png](https://s31.postimg.cc/oz427g9nf/Capture.png)](https://postimg.cc/image/5u0sxouzb/)
-    <br>
+    <br><br>
 
 * เพิ่ม sheet<br>
     เพิ่ม tag ขึ้นมาใหม่ก็จะได้ sheet ใหม่ขึ้นมา จำนวน sheet ขึ้นอยู่กับ tag <br>
     ตัวอย่างในที่นี้เราจะสร้าง 2 sheet
-
     ```java StringBuilder table = new StringBuilder();
         table.append("<table>");
           table.append("<tr>");
