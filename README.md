@@ -198,3 +198,33 @@
     ##### ผลลัพธ์ที่ได้คือ
     [![Capture.png](https://s9.postimg.cc/l446mm9u7/Capture.png)](https://postimg.cc/image/4gcok4f2j/)
     <br><br>
+    ใส่กรอบให้กับคอลัมน์บนและล่างแบบสองเส้น ใช้ border-tb-double
+    - border-tb-double-left
+    - border-tb-double-center
+    - border-tb-double-right
+    - border-tb-double-left-middle
+    - border-tb-double-center-middle
+    - border-tb-double-right-middle
+    - border-tb-double-left-top
+    - border-tb-double-center-top
+    - border-tb-double-right-top
+    - border-tb-double-orientation
+    - border-tb-double-orientation-middle
+    - border-tb-double-orientation-top
+    ```java
+    table.append("<td><format>border-tb-double-left</format>border-tb-double-left</td>");
+    table.append("<td><format>border-tb-double-center</format>border-tb-double-center</td>");
+    table.append("<td><format>border-tb-double-right</format>border-tb-double-right</td>");
+    table.append("<td><format>border-tb-double-left-middle</format>border-tb-double-left-middle</td>");
+    table.append("<td><format>border-tb-double-center-middle</format>border-tb-double-center-middle</td>");
+    table.append("<td><format>border-tb-double-right-middle</format>border-tb-double-right-middle</td>");
+    table.append("<td><format>border-tb-double-left-top</format>border-tb-double-left-top</td>");
+    table.append("<td><format>border-tb-double-center-top</format>border-tb-double-center-top</td>");
+    table.append("<td><format>border-tb-double-right-top</format>border-tb-double-right-top</td>");
+    table.append("<td><format>border-tb-double-orientation</format>border-tb-double-orientation</td>");
+    table.append("<td><format>border-tb-double-orientation-middle</format>border-tb-double-orientation-middle</td>");
+    table.append("<td><format>border-tb-double-orientation-top</format>border-tb-double-orientation-top</td>");
+    ```
+    ##### ผลลัพธ์ที่ได้คือ
+    [![Capture.png](https://s9.postimg.cc/fcd9759ov/Capture.png)](https://postimg.cc/image/ezlv0yrez/)
+    <br><br>
