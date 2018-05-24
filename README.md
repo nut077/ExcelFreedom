@@ -14,5 +14,15 @@
         table.append("<td>C</td>");
       table.append("</tr>");
     table.append("</table>");
-```
+    // ใช้งานแบบ offline
+    // parameter ตัวแรกคือที่อยู่ของไฟล์ที่จะสร้าง ตัวที่สองคือชื่อของไฟล์ excel และตัวสุดท้ายคือข้อมูลที่จะเขียนลงในไฟล์ excel
+    ExcelFreedom excelFreedom = new ExcelFreedom("D://", "excel", table.toString());
 
+    // ใช้งานแบบ online ไฟล์ jsp
+    // parameter ตัวแรกคือ response ตัวที่สองคือ out ตัวที่สามคือชื่อของไฟล์ excel และตัวสุดท้ายคือข้อมูลที่จะเขียนลงในไฟล์ excel
+    ExcelFreedom excelFreedom = new ExcelFreedom(response, out, "excel", table.toString());
+
+    excelFreedom.write(); // สั่งให้เขียนไฟล์ ```
+ ##### ผลลัพธ์ที่ได้คือ
+    [![Capture.png](https://s31.postimg.cc/oz427g9nf/Capture.png)](https://postimg.cc/image/5u0sxouzb/)
+    <br>
