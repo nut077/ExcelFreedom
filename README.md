@@ -97,10 +97,10 @@
 ใช้ tag ```<height>ตัวเลขที่ต้องการ</height>```
     ```java
     table.append("<tr>");
-    table.append("<td><height>500</height>height 500</td>");
+        table.append("<td><height>500</height>height 500</td>");
     table.append("</tr>");
     table.append("<tr>");
-    table.append("<td><height>600</height>height 600</td>");
+        table.append("<td><height>600</height>height 600</td>");
     table.append("</tr>");
     ```
     ##### ผลลัพธ์ที่ได้คือ
@@ -108,18 +108,27 @@
     <br><br>
     
 * **การจัดรูปแบบ**<br>
-ใช้ tag ```<format>รูปแบบตาม list ข้างล่าง</format>```
+ใช้ tag ```<format>รูปแบบตาม list ข้างล่าง</format>``` ค่าเริ่มต้นคือ border-center
     - left
     - center
     - right
+    - left-middle
+    - center-middle
+    - right-middle
+    - left-top
+    - center-top
+    - right-top
     ```java
-    table.append("<tr>");
-    table.append("<td><height>500</height>height 500</td>");
-    table.append("</tr>");
-    table.append("<tr>");
-    table.append("<td><height>600</height>height 600</td>");
-    table.append("</tr>");
+    table.append("<td><format>left</format>left</td>");
+    table.append("<td><format>center</format>center</td>");
+    table.append("<td><format>right</format>right</td>");
+    table.append("<td><format>left-middle</format>left-middle</td>");
+    table.append("<td><format>center-middle</format>center-middle</td>");
+    table.append("<td><format>right-middle</format>right-middle</td>");
+    table.append("<td><format>left-top</format>left-top</td>");
+    table.append("<td><format>center-top</format>center-top</td>");
+    table.append("<td><format>right-top</format>right-top</td>");
     ```
     ##### ผลลัพธ์ที่ได้คือ
-    [![Capture.png](https://s9.postimg.cc/6uvdd4tfj/Capture.png)](https://postimg.cc/image/4qb0c1rsr/)
+    [![Capture.png](https://s9.postimg.cc/orar13g3j/Capture.png)](https://postimg.cc/image/q6cbpth6j/)
     <br><br>
