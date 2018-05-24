@@ -6,7 +6,8 @@
 ### Tutorial ExcelFreedom
 * รูปแบบการใช้งาน<br>
 ```<table></table>``` คือ 1 sheet ```<tr></tr>``` คือ 1 แถว ```<td></td>``` คือ 1 column
-    ```java StringBuilder table = new StringBuilder();
+    ```java
+    StringBuilder table = new StringBuilder();
     table.append("<table>");
       table.append("<tr>");
         table.append("<td>A</td>");
@@ -31,7 +32,8 @@
 * เพิ่ม sheet<br>
 เพิ่ม tag ```<table></table>``` ขึ้นมาใหม่ก็จะได้ sheet ใหม่ขึ้นมา จำนวน sheet ขึ้นอยู่กับ tag ```<table>```<br>
 ตัวอย่างในที่นี้เราจะสร้าง 2 sheet
-    ```java StringBuilder table = new StringBuilder();
+    ```java
+    StringBuilder table = new StringBuilder();
     table.append("<table>");
       table.append("<tr>");
         table.append("<td>A</td>");
