@@ -21,5 +21,5 @@ table.append("</table>");
 ExcelFreedom excelFreedom = new ExcelFreedom("D://", "excel", table.toString());
 excelFreedom.write(); // สั่งให้เขียนไฟล์
 ```
-##### ผลลัพธ์ที่ได้คือ
+###### ผลลัพธ์ที่ได้คือ
 [![Capture.png](https://s31.postimg.cc/oz427g9nf/Capture.png)](https://postimg.cc/image/5u0sxouzb/)
