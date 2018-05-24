@@ -82,3 +82,27 @@
     ##### ผลลัพธ์ที่ได้คือ
     [![Capture.png](https://s31.postimg.cc/tk8m5p2ez/Capture.png)](https://postimg.cc/image/bu6xknotz/)
     <br><br>
+    
+* **ขยายขนาดความกว้างของคอลัมน์**<br>
+ใช้ tag ```<width>ตัวเลขที่ต้องการ</width>```
+    ```java
+    table.append("<td><width>10</width>width 10</td>");
+    table.append("<td><width>20</width>width 20</td>");
+    ```
+    ##### ผลลัพธ์ที่ได้คือ
+    [![Capture.png](https://s31.postimg.cc/5j1q4e0i3/Capture.png)](https://postimg.cc/image/nym71semf/)
+    <br><br>
+    
+* **ขยายขนาดความสูงของคอลัมน์**<br>
+ใช้ tag ```<height>ตัวเลขที่ต้องการ</height>```
+    ```java
+        table.append("<tr>");
+        table.append("<td><height>500</height>height 500</td>");
+        table.append("</tr>");
+        table.append("<tr>");
+        table.append("<td><height>600</height>height 600</td>");
+        table.append("</tr>");
+    ```
+    ##### ผลลัพธ์ที่ได้คือ
+    [![Capture.png](https://s9.postimg.cc/6uvdd4tfj/Capture.png)](https://postimg.cc/image/4qb0c1rsr/)
+    <br><br>
