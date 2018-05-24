@@ -50,13 +50,26 @@
     table.append("</table>");
     ```
     ##### ผลลัพธ์ที่ได้คือ
-    [![Capture.png](https://s9.postimg.cc/cp66feunj/Capture.png)](https://postimg.cc/image/70zvoiqaz/)<br>
+    [![Capture.png](https://s9.postimg.cc/cp66feunj/Capture.png)](https://postimg.cc/image/70zvoiqaz/)
+    <br><br>
     
 * **เปลี่ยนชื่อ sheet**<br>
-โดยใช้ tag ```<sheet>ชื่อ sheet</sheet>``` โดยใส่ไว้ต่อจาก ```<table>```
+ใช้ tag ```<sheet>ชื่อ sheet</sheet>``` โดยใส่ไว้ต่อจาก ```<table>```
     ```java
     table.append("<table>");
     table.append("<sheet>new sheet</sheet>");
     ```
     ##### ผลลัพธ์ที่ได้คือ
     [![Capture.png](https://s9.postimg.cc/m8kgmxzxb/Capture.png)](https://postimg.cc/image/jr8pfog0r/)
+    <br><br>
+    
+* **ผสานเซลล์ แนวนอน**<br>
+ใช้ tag ```<colspan>ตัวเลขที่ต้องการ</colspan>```
+    ```java
+    table.append("<td><colspan>2</colspan>colspan 2</td>");
+    table.append("<td><colspan>3</colspan>colspan 3</td>");
+    ```
+    ##### ผลลัพธ์ที่ได้คือ
+    [![Capture.png](https://s9.postimg.cc/6ea5qgdbj/Capture.png)](https://postimg.cc/image/49pspdbor/)
+    <br><br>
+    
