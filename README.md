@@ -118,6 +118,9 @@
     - left-top
     - center-top
     - right-top
+    - orientation
+    - orientation-middle
+    - orientation-top
     ```java
     table.append("<td><format>left</format>left</td>");
     table.append("<td><format>center</format>center</td>");
@@ -128,7 +131,10 @@
     table.append("<td><format>left-top</format>left-top</td>");
     table.append("<td><format>center-top</format>center-top</td>");
     table.append("<td><format>right-top</format>right-top</td>");
+    table.append("<td><format>orientation</format>orientation</td>");
+    table.append("<td><format>orientation-middle</format>orientation-middle</td>");
+    table.append("<td><format>orientation-top</format>orientation-top</td>");
     ```
     ##### ผลลัพธ์ที่ได้คือ
-    [![Capture.png](https://s9.postimg.cc/orar13g3j/Capture.png)](https://postimg.cc/image/q6cbpth6j/)
+    [![Capture.png](https://s31.postimg.cc/f8yrbc2zv/Capture.png)](https://postimg.cc/image/85qvvpxk7/)
     <br><br>
