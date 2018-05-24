@@ -137,8 +137,8 @@
     ```
     ##### ผลลัพธ์ที่ได้คือ
     [![Capture.png](https://s31.postimg.cc/fqtwr70aj/Capture.png)](https://postimg.cc/image/lrrlo9mwn/)
-    <br>
-    ใส่กรอบให้กับคอลัมน์ ใช้ border
+    <br><br>
+    ใส่กรอบให้กับคอลัมน์ทั้งหมด ใช้ border
     - border-left
     - border-center
     - border-right
@@ -167,4 +167,20 @@
     ```
     ##### ผลลัพธ์ที่ได้คือ
     [![Capture.png](https://s31.postimg.cc/q0wbqtnpn/Capture.png)](https://postimg.cc/image/4r8pfz7ev/)
+    <br><br>
+    ใส่กรอบให้กับคอลัมน์บนและล่าง ใช้ border-tb
+    - border-tb-left
+    - border-tb-center
+    - border-tb-right
+    - border-tb-left-middle
+    - border-tb-center-middle
+    - border-tb-right-middle
+    - border-tb-left-top
+    - border-tb-center-top
+    - border-tb-right-top
+    - border-tb-orientation
+    - border-tb-orientation-middle
+    - border-tb-orientation-top
+    ##### ผลลัพธ์ที่ได้คือ
+    [![Capture.png](https://s9.postimg.cc/l446mm9u7/Capture.png)](https://postimg.cc/image/4gcok4f2j/)
     <br><br>
