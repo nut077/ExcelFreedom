@@ -206,3 +206,43 @@
     ##### ผลลัพธ์ที่ได้คือ
     [![Capture.png](https://s31.postimg.cc/5d29phzh7/Capture.png)](https://postimg.cc/image/jji0kqac7/)
     <br><br>
+    ใส่กรอบให้กับคอลัมน์เฉพาะล่างแบบ 2 เส้น ใช้ border-b-double
+    - border-b-double-left
+    - border-b-double-center
+    - border-b-double-right
+    - border-b-double-left-middle
+    - border-b-double-center-middle
+    - border-b-double-right-middle
+    - border-b-double-left-top
+    - border-b-double-center-top
+    - border-b-double-right-top
+    - border-b-double-orientation
+    - border-b-double-orientation-middle
+    - border-b-double-orientation-top
+
+    ##### ผลลัพธ์ที่ได้คือ
+    [![Capture.png](https://s31.postimg.cc/t5bl14we3/Capture.png)](https://postimg.cc/image/cubh4tjw7/)
+    <br><br>
+    ใส่กรอบให้กับคอลัมน์ทั้งหมดเฉพาะล่างแบบ 2 เส้น ใช้ border-all-b-double
+    - border-all-b-double-left
+    - border-all-b-double-center
+    - border-all-b-double-right
+    - border-all-b-double-left-middle
+    - border-all-b-double-center-middle
+    - border-all-b-double-right-middle
+    - border-all-b-double-left-top
+    - border-all-b-double-center-top
+    - border-all-b-double-right-top
+    - border-all-b-double-orientation
+    - border-all-b-double-orientation-middle
+    - border-all-b-double-orientation-top
+
+    ##### ผลลัพธ์ที่ได้คือ
+    [![Capture.png](https://s31.postimg.cc/5fm5cbvez/Capture.png)](https://postimg.cc/image/u8vpczefb/)
+    <br><br>
+    ถ้าต้องการให้กรอบเป็นเส้นปะให้ใช้ dashed โดยเอามาวางต่อจาก border<br>
+    ตัวอย่างเช่น border-dashed-center
+    ##### ผลลัพธ์ที่ได้คือ
+    [![Capture.png](https://s9.postimg.cc/idhj3f5bj/Capture.png)](https://postimg.cc/image/x9g2b0gq3/)
+    <br><br>
+    
