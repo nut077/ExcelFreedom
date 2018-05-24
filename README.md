@@ -96,12 +96,12 @@
 * **ขยายขนาดความสูงของคอลัมน์**<br>
 ใช้ tag ```<height>ตัวเลขที่ต้องการ</height>```
     ```java
-        table.append("<tr>");
-        table.append("<td><height>500</height>height 500</td>");
-        table.append("</tr>");
-        table.append("<tr>");
-        table.append("<td><height>600</height>height 600</td>");
-        table.append("</tr>");
+    table.append("<tr>");
+    table.append("<td><height>500</height>height 500</td>");
+    table.append("</tr>");
+    table.append("<tr>");
+    table.append("<td><height>600</height>height 600</td>");
+    table.append("</tr>");
     ```
     ##### ผลลัพธ์ที่ได้คือ
     [![Capture.png](https://s9.postimg.cc/6uvdd4tfj/Capture.png)](https://postimg.cc/image/4qb0c1rsr/)
