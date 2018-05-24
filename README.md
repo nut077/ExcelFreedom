@@ -106,3 +106,20 @@
     ##### ผลลัพธ์ที่ได้คือ
     [![Capture.png](https://s9.postimg.cc/6uvdd4tfj/Capture.png)](https://postimg.cc/image/4qb0c1rsr/)
     <br><br>
+    
+* **การจัดรูปแบบ**<br>
+ใช้ tag ```<format>รูปแบบตาม list ข้างล่าง</format>```
+    - left
+    - center
+    - right
+    ```java
+    table.append("<tr>");
+    table.append("<td><height>500</height>height 500</td>");
+    table.append("</tr>");
+    table.append("<tr>");
+    table.append("<td><height>600</height>height 600</td>");
+    table.append("</tr>");
+    ```
+    ##### ผลลัพธ์ที่ได้คือ
+    [![Capture.png](https://s9.postimg.cc/6uvdd4tfj/Capture.png)](https://postimg.cc/image/4qb0c1rsr/)
+    <br><br>
