@@ -30,7 +30,7 @@ excelFreedom.write(); // สั่งให้เขียนไฟล์
 
 <br>
 * เพิ่ม sheet<br>
-เพิ่ม tag ```<table></table>``` ขึ้นมาใหม่ก็จะได้ sheet ใหม่ขึ้นมา จำนวน sheet ขึ้นอยู่กับ tag ```<table></table>``` <br>
+เพิ่ม tag ขึ้นมาใหม่ก็จะได้ sheet ใหม่ขึ้นมา จำนวน sheet ขึ้นอยู่กับ tag <br>
 ตัวอย่างในที่นี้เราจะสร้าง 2 sheet
 
 ```java
