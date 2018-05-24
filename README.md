@@ -73,3 +73,12 @@
     [![Capture.png](https://s9.postimg.cc/6ea5qgdbj/Capture.png)](https://postimg.cc/image/49pspdbor/)
     <br><br>
     
+* **ผสานเซลล์ แนวตั้ง**<br>
+ใช้ tag ```<rowspan>ตัวเลขที่ต้องการ</rowspan>```
+    ```java
+    table.append("<td><rowspan>2</rowspan>rowspan 2</td>");
+    table.append("<td><rowspan>3</rowspan>rowspan 3</td>");
+    ```
+    ##### ผลลัพธ์ที่ได้คือ
+    [![Capture.png](https://s31.postimg.cc/tk8m5p2ez/Capture.png)](https://postimg.cc/image/bu6xknotz/)
+    <br><br>
