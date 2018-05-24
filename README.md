@@ -165,5 +165,5 @@
     table.append("<td><format>border-orientation-top</format>orientation-top</td>");
     ```
     ##### ผลลัพธ์ที่ได้คือ
-    [![Capture.png](https://s31.postimg.cc/wosxdimob/Capture.png)](https://postimg.cc/image/uk8kcfl1j/)
+    [![Capture.png](https://s31.postimg.cc/5s8y4r15n/Capture.png)](https://postimg.cc/image/7wtb5u2s7/)
     <br><br>
