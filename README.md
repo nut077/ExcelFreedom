@@ -137,4 +137,33 @@
     ```
     ##### ผลลัพธ์ที่ได้คือ
     [![Capture.png](https://s31.postimg.cc/5of4ooivf/Capture.png)](https://postimg.cc/image/an2n37mo7/)
+    <br>
+    - border-left
+    - border-center
+    - border-right
+    - border-left-middle
+    - border-center-middle
+    - border-right-middle
+    - border-left-top
+    - border-center-top
+    - border-right-top
+    - border-orientation
+    - border-orientation-middle
+    - border-orientation-top
+    ```java
+    table.append("<td><format>border-left</format>left</td>");
+    table.append("<td><format>border-center</format>center</td>");
+    table.append("<td><format>border-right</format>right</td>");
+    table.append("<td><format>border-left-middle</format>left-middle</td>");
+    table.append("<td><format>border-center-middle</format>center-middle</td>");
+    table.append("<td><format>border-right-middle</format>right-middle</td>");
+    table.append("<td><format>border-left-top</format>left-top</td>");
+    table.append("<td><format>border-center-top</format>center-top</td>");
+    table.append("<td><format>border-right-top</format>right-top</td>");
+    table.append("<td><format>border-orientation</format>orientation</td>");
+    table.append("<td><format>border-orientation-middle</format>orientation-middle</td>");
+    table.append("<td><format>border-orientation-top</format>orientation-top</td>");
+    ```
+    ##### ผลลัพธ์ที่ได้คือ
+    [![Capture.png](https://s31.postimg.cc/wosxdimob/Capture.png)](https://postimg.cc/image/uk8kcfl1j/)
     <br><br>
