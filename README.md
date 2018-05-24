@@ -136,7 +136,7 @@
     table.append("<td><format>orientation-top</format>orientation-top</td>");
     ```
     ##### ผลลัพธ์ที่ได้คือ
-    [![Capture.png](https://s31.postimg.cc/5of4ooivf/Capture.png)](https://postimg.cc/image/an2n37mo7/)
+    [![Capture.png](https://s31.postimg.cc/tvzpt56sr/Capture.png)](https://postimg.cc/image/4pyrmb5if/)
     <br>
     - border-left
     - border-center
