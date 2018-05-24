@@ -69,9 +69,13 @@ public class ExcelFreedom {
         this.statusFile = false;
     }
 
-    public ExcelFreedom(ServletOutputStream pathFileServlet, HttpServletResponse response, JspWriter out, String filename, String table) {
+    public ExcelFreedom(HttpServletResponse response, JspWriter out, String filename, String table) {
         this.table = table;
-        this.pathFileServlet = pathFileServlet;
+        try {
+            this.pathFileServlet = response.getOutputStream();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         this.response = response;
         this.out = out;
         this.filename = filename;

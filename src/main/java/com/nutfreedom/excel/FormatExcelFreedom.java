@@ -141,16 +141,16 @@ class FormatExcelFreedom {
         this.format.put("left", setFormatCell(Alignment.LEFT));
         this.format.put("center", setFormatCell(Alignment.CENTRE));
         this.format.put("right", setFormatCell(Alignment.RIGHT));
-        this.format.put("left-top", setFormatCell(Alignment.LEFT, VerticalAlignment.TOP));
-        this.format.put("center-top", setFormatCell(Alignment.CENTRE, VerticalAlignment.TOP));
-        this.format.put("right-top", setFormatCell(Alignment.RIGHT, VerticalAlignment.TOP));
         this.format.put("left-middle", setFormatCell(Alignment.LEFT, VerticalAlignment.CENTRE));
         this.format.put("center-middle", setFormatCell(Alignment.CENTRE, VerticalAlignment.CENTRE));
         this.format.put("right-middle", setFormatCell(Alignment.RIGHT, VerticalAlignment.CENTRE));
-
+        this.format.put("left-top", setFormatCell(Alignment.LEFT, VerticalAlignment.TOP));
+        this.format.put("center-top", setFormatCell(Alignment.CENTRE, VerticalAlignment.TOP));
+        this.format.put("right-top", setFormatCell(Alignment.RIGHT, VerticalAlignment.TOP));
         this.format.put("orientation", setFormatCellOrientation());
         this.format.put("orientation-middle", setFormatCellOrientation(VerticalAlignment.CENTRE));
         this.format.put("orientation-top", setFormatCellOrientation(VerticalAlignment.TOP));
+
         this.format.put("border-orientation", setFormatCellOrientationBorder(BorderLineStyle.THIN));
         this.format.put("border-dashed-orientation", setFormatCellOrientationBorder(BorderLineStyle.DASHED));
         this.format.put("border-orientation-middle", setFormatCellOrientationBorder(VerticalAlignment.CENTRE, BorderLineStyle.THIN));
@@ -158,11 +158,11 @@ class FormatExcelFreedom {
         this.format.put("border-orientation-top", setFormatCellOrientationBorder(VerticalAlignment.TOP, BorderLineStyle.THIN));
         this.format.put("border-dashed-orientation-top", setFormatCellOrientationBorder(VerticalAlignment.TOP, BorderLineStyle.DASHED));
         this.format.put("border-tb-orientation", setFormatCellOrientationBorderTopBottom(BorderLineStyle.THIN));
-        this.format.put("border-tb-dashed-orientation", setFormatCellOrientationBorderTopBottom(BorderLineStyle.DASHED));
+        this.format.put("border-dashed-tb-orientation", setFormatCellOrientationBorderTopBottom(BorderLineStyle.DASHED));
         this.format.put("border-tb-orientation-middle", setFormatCellOrientationBorderTopBottom(VerticalAlignment.CENTRE, BorderLineStyle.THIN));
-        this.format.put("border-tb-dashed-orientation-middle", setFormatCellOrientationBorderTopBottom(VerticalAlignment.CENTRE, BorderLineStyle.DASHED));
+        this.format.put("border-dashed-tb-orientation-middle", setFormatCellOrientationBorderTopBottom(VerticalAlignment.CENTRE, BorderLineStyle.DASHED));
         this.format.put("border-tb-orientation-top", setFormatCellOrientationBorderTopBottom(VerticalAlignment.TOP, BorderLineStyle.THIN));
-        this.format.put("border-tb-dashed-orientation-top", setFormatCellOrientationBorderTopBottom(VerticalAlignment.TOP, BorderLineStyle.DASHED));
+        this.format.put("border-dashed-tb-orientation-top", setFormatCellOrientationBorderTopBottom(VerticalAlignment.TOP, BorderLineStyle.DASHED));
         this.format.put("border-tb-double-orientation", setFormatCellOrientationBorderTopBottomDouble());
         this.format.put("border-tb-double-orientation-middle", setFormatCellOrientationBorderTopBottomDouble(VerticalAlignment.CENTRE));
         this.format.put("border-tb-double-orientation-top", setFormatCellOrientationBorderTopBottomDouble(VerticalAlignment.TOP));
