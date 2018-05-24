@@ -4,7 +4,7 @@
 [Tutorial.ExcelFreedom.pdf](https://github.com/nut077/ExcelFreedom/files/1987462/Tutorial.ExcelFreedom.pdf)
 
 ### Tutorial ExcelFreedom
-รูปแบบการใช้งาน ```<table></table>``` คือ 1 sheet ```<tr></tr>``` คือ 1 แถว ```<td></td>``` คือ 1 column
+* รูปแบบการใช้งาน ```<table></table>``` คือ 1 sheet ```<tr></tr>``` คือ 1 แถว ```<td></td>``` คือ 1 column
 ```java 
 StringBuilder table = new StringBuilder();
 table.append("<table>");
@@ -29,8 +29,8 @@ excelFreedom.write(); // สั่งให้เขียนไฟล์
 [![Capture.png](https://s31.postimg.cc/oz427g9nf/Capture.png)](https://postimg.cc/image/5u0sxouzb/)
 
 <br>
-* เพิ่ม sheet
-เพิ่ม tag ```<table></table>``` ขึ้นมาใหม่ก็จะได้ sheet ใหม่ขึ้นมา จำนวน sheet ขึ้นอยู่กับ tag ```<table></table>```<br>
+* เพิ่ม sheet<br>
+เพิ่ม tag ```<table></table>``` ขึ้นมาใหม่ก็จะได้ sheet ใหม่ขึ้นมา จำนวน sheet ขึ้นอยู่กับ tag ```<table></table>``` <br>
 ตัวอย่างในที่นี้เราจะสร้าง 2 sheet
 
 ```java
