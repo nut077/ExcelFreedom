@@ -181,6 +181,20 @@
     - border-tb-orientation
     - border-tb-orientation-middle
     - border-tb-orientation-top
+    ```java
+    table.append("<td><format>border-tb-left</format>border-tb-left</td>");
+    table.append("<td><format>border-tb-center</format>border-tb-center</td>");
+    table.append("<td><format>border-tb-right</format>border-tb-right</td>");
+    table.append("<td><format>border-tb-left-middle</format>border-tb-left-middle</td>");
+    table.append("<td><format>border-tb-center-middle</format>border-tb-center-middle</td>");
+    table.append("<td><format>border-tb-right-middle</format>border-tb-right-middle</td>");
+    table.append("<td><format>border-tb-left-top</format>border-tb-left-top</td>");
+    table.append("<td><format>border-tb-center-top</format>border-tb-center-top</td>");
+    table.append("<td><format>border-tb-right-top</format>border-tb-right-top</td>");
+    table.append("<td><format>border-tb-orientation</format>border-tb-orientation</td>");
+    table.append("<td><format>border-tb-orientation-middle</format>border-tb-orientation-middle</td>");
+    table.append("<td><format>border-tb-orientation-top</format>border-tb-orientation-top</td>");
+    ```
     ##### ผลลัพธ์ที่ได้คือ
     [![Capture.png](https://s9.postimg.cc/l446mm9u7/Capture.png)](https://postimg.cc/image/4gcok4f2j/)
     <br><br>
