@@ -151,20 +151,7 @@
     - border-orientation
     - border-orientation-middle
     - border-orientation-top
-    ```java
-    table.append("<td><format>border-left</format>border-left</td>");
-    table.append("<td><format>border-center</format>border-center</td>");
-    table.append("<td><format>border-right</format>border-right</td>");
-    table.append("<td><format>border-left-middle</format>border-left-middle</td>");
-    table.append("<td><format>border-center-middle</format>border-center-middle</td>");
-    table.append("<td><format>border-right-middle</format>border-right-middle</td>");
-    table.append("<td><format>border-left-top</format>border-left-top</td>");
-    table.append("<td><format>border-center-top</format>border-center-top</td>");
-    table.append("<td><format>border-right-top</format>border-right-top</td>");
-    table.append("<td><format>border-orientation</format>border-orientation</td>");
-    table.append("<td><format>border-orientation-middle</format>border-orientation-middle</td>");
-    table.append("<td><format>border-orientation-top</format>border-orientation-top</td>");
-    ```
+
     ##### ผลลัพธ์ที่ได้คือ
     [![Capture.png](https://s31.postimg.cc/q0wbqtnpn/Capture.png)](https://postimg.cc/image/4r8pfz7ev/)
     <br><br>
@@ -181,20 +168,7 @@
     - border-tb-orientation
     - border-tb-orientation-middle
     - border-tb-orientation-top
-    ```java
-    table.append("<td><format>border-tb-left</format>border-tb-left</td>");
-    table.append("<td><format>border-tb-center</format>border-tb-center</td>");
-    table.append("<td><format>border-tb-right</format>border-tb-right</td>");
-    table.append("<td><format>border-tb-left-middle</format>border-tb-left-middle</td>");
-    table.append("<td><format>border-tb-center-middle</format>border-tb-center-middle</td>");
-    table.append("<td><format>border-tb-right-middle</format>border-tb-right-middle</td>");
-    table.append("<td><format>border-tb-left-top</format>border-tb-left-top</td>");
-    table.append("<td><format>border-tb-center-top</format>border-tb-center-top</td>");
-    table.append("<td><format>border-tb-right-top</format>border-tb-right-top</td>");
-    table.append("<td><format>border-tb-orientation</format>border-tb-orientation</td>");
-    table.append("<td><format>border-tb-orientation-middle</format>border-tb-orientation-middle</td>");
-    table.append("<td><format>border-tb-orientation-top</format>border-tb-orientation-top</td>");
-    ```
+    
     ##### ผลลัพธ์ที่ได้คือ
     [![Capture.png](https://s9.postimg.cc/l446mm9u7/Capture.png)](https://postimg.cc/image/4gcok4f2j/)
     <br><br>
@@ -211,20 +185,7 @@
     - border-tb-double-orientation
     - border-tb-double-orientation-middle
     - border-tb-double-orientation-top
-    ```java
-    table.append("<td><format>border-tb-double-left</format>border-tb-double-left</td>");
-    table.append("<td><format>border-tb-double-center</format>border-tb-double-center</td>");
-    table.append("<td><format>border-tb-double-right</format>border-tb-double-right</td>");
-    table.append("<td><format>border-tb-double-left-middle</format>border-tb-double-left-middle</td>");
-    table.append("<td><format>border-tb-double-center-middle</format>border-tb-double-center-middle</td>");
-    table.append("<td><format>border-tb-double-right-middle</format>border-tb-double-right-middle</td>");
-    table.append("<td><format>border-tb-double-left-top</format>border-tb-double-left-top</td>");
-    table.append("<td><format>border-tb-double-center-top</format>border-tb-double-center-top</td>");
-    table.append("<td><format>border-tb-double-right-top</format>border-tb-double-right-top</td>");
-    table.append("<td><format>border-tb-double-orientation</format>border-tb-double-orientation</td>");
-    table.append("<td><format>border-tb-double-orientation-middle</format>border-tb-double-orientation-middle</td>");
-    table.append("<td><format>border-tb-double-orientation-top</format>border-tb-double-orientation-top</td>");
-    ```
+
     ##### ผลลัพธ์ที่ได้คือ
     [![Capture.png](https://s9.postimg.cc/fcd9759ov/Capture.png)](https://postimg.cc/image/ezlv0yrez/)
     <br><br>
