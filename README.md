@@ -153,7 +153,7 @@
     - border-orientation-top
 
     ##### ผลลัพธ์ที่ได้คือ
-    [![Capture.png](https://s31.postimg.cc/q0wbqtnpn/Capture.png)](https://postimg.cc/image/4r8pfz7ev/)
+    [![Capture.png](https://s9.postimg.cc/5qtc18gnz/Capture.png)](https://postimg.cc/image/r0gyc2wyj/)
     <br><br>
     ใส่กรอบให้กับคอลัมน์บนและล่าง ใช้ border-tb
     - border-tb-left
