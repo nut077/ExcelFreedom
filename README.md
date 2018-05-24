@@ -138,6 +138,7 @@
     ##### ผลลัพธ์ที่ได้คือ
     [![Capture.png](https://s31.postimg.cc/fqtwr70aj/Capture.png)](https://postimg.cc/image/lrrlo9mwn/)
     <br>
+    ใส่กรอบให้กับคอลัมน์ ใช้ border
     - border-left
     - border-center
     - border-right
