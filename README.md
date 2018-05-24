@@ -7,14 +7,14 @@
 * รูปแบบการใช้งาน<br>
 ```<table></table>``` คือ 1 sheet ```<tr></tr>``` คือ 1 แถว ```<td></td>``` คือ 1 column
 ```java 
-StringBuilder table = new StringBuilder();
-table.append("<table>");
-  table.append("<tr>");
-    table.append("<td>A</td>");
-    table.append("<td>B</td>");
-    table.append("<td>C</td>");
-  table.append("</tr>");
-table.append("</table>");
+    StringBuilder table = new StringBuilder();
+    table.append("<table>");
+      table.append("<tr>");
+        table.append("<td>A</td>");
+        table.append("<td>B</td>");
+        table.append("<td>C</td>");
+      table.append("</tr>");
+    table.append("</table>");
 
 // ใช้งานแบบ offline
 // parameter ตัวแรกคือที่อยู่ของไฟล์ที่จะสร้าง ตัวที่สองคือชื่อของไฟล์ excel และตัวสุดท้ายคือข้อมูลที่จะเขียนลงในไฟล์ excel
