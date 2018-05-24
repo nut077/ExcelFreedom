@@ -29,24 +29,24 @@
     <br><br>
 
 * เพิ่ม sheet<br>
-    เพิ่ม tag ```<table></table>``` ขึ้นมาใหม่ก็จะได้ sheet ใหม่ขึ้นมา จำนวน sheet ขึ้นอยู่กับ tag ```<table>```<br>
-    ตัวอย่างในที่นี้เราจะสร้าง 2 sheet
-    ```java StringBuilder table = new StringBuilder();
-        table.append("<table>");
-          table.append("<tr>");
-            table.append("<td>A</td>");
-            table.append("<td>B</td>");
-            table.append("<td>C</td>");
-          table.append("</tr>");
-        table.append("</table>");
-        table.append("<table>");
-          table.append("<tr>");
-            table.append("<td>D</td>");
-            table.append("<td>E</td>");
-            table.append("<td>F</td>");
-          table.append("</tr>");
-        table.append("</table>");
-    ```
-    ##### ผลลัพธ์ที่ได้คือ
-    [![Capture.png](https://s9.postimg.cc/cp66feunj/Capture.png)](https://postimg.cc/image/70zvoiqaz/)
-    <br>
+เพิ่ม tag ```<table></table>``` ขึ้นมาใหม่ก็จะได้ sheet ใหม่ขึ้นมา จำนวน sheet ขึ้นอยู่กับ tag ```<table>```<br>
+ตัวอย่างในที่นี้เราจะสร้าง 2 sheet
+```java StringBuilder table = new StringBuilder();
+    table.append("<table>");
+      table.append("<tr>");
+        table.append("<td>A</td>");
+        table.append("<td>B</td>");
+        table.append("<td>C</td>");
+      table.append("</tr>");
+    table.append("</table>");
+    table.append("<table>");
+      table.append("<tr>");
+        table.append("<td>D</td>");
+        table.append("<td>E</td>");
+        table.append("<td>F</td>");
+      table.append("</tr>");
+    table.append("</table>");
+```
+##### ผลลัพธ์ที่ได้คือ
+[![Capture.png](https://s9.postimg.cc/cp66feunj/Capture.png)](https://postimg.cc/image/70zvoiqaz/)
+<br>
