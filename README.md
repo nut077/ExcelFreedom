@@ -170,7 +170,7 @@
     - border-tb-orientation-top
     
     ##### ผลลัพธ์ที่ได้คือ
-    [![Capture.png](https://s9.postimg.cc/l446mm9u7/Capture.png)](https://postimg.cc/image/4gcok4f2j/)
+    [![Capture.png](https://s9.postimg.cc/sjcchgo7z/Capture.png)](https://postimg.cc/image/iyspukyvv/)
     <br><br>
     ใส่กรอบให้กับคอลัมน์บนและล่างแบบสองเส้น ใช้ border-tb-double
     - border-tb-double-left
@@ -187,5 +187,5 @@
     - border-tb-double-orientation-top
 
     ##### ผลลัพธ์ที่ได้คือ
-    [![Capture.png](https://s9.postimg.cc/fcd9759ov/Capture.png)](https://postimg.cc/image/ezlv0yrez/)
+    [![Capture.png](https://s9.postimg.cc/ir52xvdkv/Capture.png)](https://postimg.cc/image/p4u614igr/)
     <br><br>
