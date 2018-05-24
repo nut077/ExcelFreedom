@@ -29,7 +29,7 @@
     <br><br>
 
 * เพิ่ม sheet<br>
-    เพิ่ม tag ขึ้นมาใหม่ก็จะได้ sheet ใหม่ขึ้นมา จำนวน sheet ขึ้นอยู่กับ tag <br>
+    เพิ่ม tag ```<table></table>``` ขึ้นมาใหม่ก็จะได้ sheet ใหม่ขึ้นมา จำนวน sheet ขึ้นอยู่กับ tag ```<table>```<br>
     ตัวอย่างในที่นี้เราจะสร้าง 2 sheet
     ```java StringBuilder table = new StringBuilder();
         table.append("<table>");
