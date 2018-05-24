@@ -4,7 +4,8 @@
 [Tutorial.ExcelFreedom.pdf](https://github.com/nut077/ExcelFreedom/files/1987462/Tutorial.ExcelFreedom.pdf)
 
 ### Tutorial ExcelFreedom
-* รูปแบบการใช้งาน ```<table></table>``` คือ 1 sheet ```<tr></tr>``` คือ 1 แถว ```<td></td>``` คือ 1 column
+* รูปแบบการใช้งาน<br>
+```<table></table>``` คือ 1 sheet ```<tr></tr>``` คือ 1 แถว ```<td></td>``` คือ 1 column
 ```java 
 StringBuilder table = new StringBuilder();
 table.append("<table>");
@@ -27,32 +28,8 @@ excelFreedom.write(); // สั่งให้เขียนไฟล์
 ```
 ##### ผลลัพธ์ที่ได้คือ
 [![Capture.png](https://s31.postimg.cc/oz427g9nf/Capture.png)](https://postimg.cc/image/5u0sxouzb/)
-
 <br>
-* เพิ่ม sheet<br>
-เพิ่ม tag ขึ้นมาใหม่ก็จะได้ sheet ใหม่ขึ้นมา จำนวน sheet ขึ้นอยู่กับ tag <br>
-ตัวอย่างในที่นี้เราจะสร้าง 2 sheet
 
-```java
-StringBuilder table = new StringBuilder();
-table.append("<table>");
-  table.append("<tr>");
-    table.append("<td>A</td>");
-    table.append("<td>B</td>");
-    table.append("<td>C</td>");
-  table.append("</tr>");
-table.append("</table>");
-table.append("<table>");
-  table.append("<tr>");
-    table.append("<td>D</td>");
-    table.append("<td>E</td>");
-    table.append("<td>F</td>");
-  table.append("</tr>");
-table.append("</table>");
-```
-##### ผลลัพธ์ที่ได้คือ
-[![Capture.png](https://s9.postimg.cc/cp66feunj/Capture.png)](https://postimg.cc/image/70zvoiqaz/)
-<br>
 * เปลี่ยนชื่อ sheet
 โดยค่าเริ่มต้นจะตั้งชื่อเป็น sheet 1
 
