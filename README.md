@@ -416,3 +416,23 @@
     ##### ผลลัพธ์ที่ได้คือ
     [![Capture.png](https://s9.postimg.cc/vhpfshjz3/Capture.png)](https://postimg.cc/image/i0sh9m9nf/)
     <br><br>
+    
+    กรณีใช้สูตรแล้วไม่รู้ว่าเราจะใช้คอลัมน์ ไหน ถึงไหน ให้ใช้ tag ```<formula-no>true or false</formula-no>``` ค่าเริ่มต้นคือ false<br>
+    รูปแบบจะเป็น SUM(#column@row#:#column@row#)<br>
+    ตัวอย่าง<br>
+    [![Capture.png](https://s31.postimg.cc/jl2kfov7v/Capture.png)](https://postimg.cc/image/8y8ra9n2f/)
+    <br>
+    ```
+    #1@1# จะมีค่าเท่ากับ A1
+    #2@1# จะมีค่าเท่ากับ B1
+    #3@1# จะมีค่าเท่ากับ C1
+    #1@2# จะมีค่าเท่ากับ A2
+    #2@2# จะมีค่าเท่ากับ B2
+    #3@2# จะมีค่าเท่ากับ C2
+    #1@3# จะมีค่าเท่ากับ A3
+    #2@3# จะมีค่าเท่ากับ B3
+    #3@3# จะมีค่าเท่ากับ C3
+    ```
+    ##### ผลลัพธ์ที่ได้คือ
+    [![Capture.png](https://s9.postimg.cc/4dmf1dczz/Capture.png)](https://postimg.cc/image/jz3qlboy3/)
+    <br><br>
