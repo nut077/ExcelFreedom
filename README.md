@@ -263,5 +263,35 @@
     table.append("<td><font-name>thsarabun_new</font-name>thsarabun_new</td>");
     ```
     ##### ผลลัพธ์ที่ได้คือ
-   [![Capture.png](https://s9.postimg.cc/sbmgj8uy7/Capture.png)](https://postimg.cc/image/fwzoix3fv/)
+    [![Capture.png](https://s9.postimg.cc/sbmgj8uy7/Capture.png)](https://postimg.cc/image/fwzoix3fv/)
+    <br><br>
+    
+* **เปลี่ยนขนาด font**<br>
+ใช้ tag ```<font-size>ขนาด<font-size>``` ค่าเริ่มต้นคือ 10
+    ```java
+    table.append("<td><font-size>10</font-size>font default</td>");
+    table.append("<td><font-size>20</font-size>font size 20</td>");
+    ```
+    ##### ผลลัพธ์ที่ได้คือ
+    [![Capture.png](https://s31.postimg.cc/cdii0oqq3/Capture.png)](https://postimg.cc/image/4kru8pkqv/)
+    <br><br>
+    
+* **ตัวอักษรตัวหนา**<br>
+ใช้ tag ```<b>true or false<b>``` ค่าเริ่มต้นคือ false
+    ```java
+    table.append("<td>font normal</td>");
+    table.append("<td><b>true</b>font bold</td>");
+    ```
+    ##### ผลลัพธ์ที่ได้คือ
+    [![Capture.png](https://s31.postimg.cc/pvtzqp53v/Capture.png)](https://postimg.cc/image/982ho7ac7/)
+    <br><br>
+    
+* **ตัวอักษรตัวเอียง**<br>
+ใช้ tag ```<i>true or false<i>``` ค่าเริ่มต้นคือ false
+    ```java
+    table.append("<td>font normal</td>");
+    table.append("<td><i>true</i>font italic</td>");
+    ```
+    ##### ผลลัพธ์ที่ได้คือ
+    [![Capture.png](https://s31.postimg.cc/o410vz18b/Capture.png)](https://postimg.cc/image/49ez9um0n/)
     <br><br>
