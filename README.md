@@ -333,7 +333,7 @@
     <br><br>
     
 * **สี**<br>
-ใช้ tag ```<background-color>รูปแบบตาม list ข้างล่าง<background-color> เมื่อต้องการเปลี่ยนสีพื้นหลัง``` ค่าเริ่มต้นคือ ไม่มีสี
+ใช้ tag ```<background-color>รูปแบบตาม list ข้างล่าง<background-color> เมื่อต้องการเปลี่ยนสีพื้นหลัง``` ค่าเริ่มต้นคือ ไม่มีสี<br>
 ใช้ tag ```<font-color>รูปแบบตาม list ข้างล่าง<font-color> เมื่อต้องการเปลี่ยนสีตัวอักษร``` ค่าเริ่มต้นคือ black
     - aqua
     - black
