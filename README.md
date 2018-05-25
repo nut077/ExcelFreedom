@@ -295,3 +295,21 @@
     ##### ผลลัพธ์ที่ได้คือ
     [![Capture.png](https://s31.postimg.cc/o410vz18b/Capture.png)](https://postimg.cc/image/49ez9um0n/)
     <br><br>
+    
+* **ขีดเส้นใต้**<br>
+ใช้ tag ```<u>รูปแบบตาม list ข้างล่าง<u>``` ค่าเริ่มต้นคือ no_underline
+    - no_underline
+    - single
+    - single_accounting
+    - double
+    - double_accounting
+    ```java
+    table.append("<td>no underline</td>");
+    table.append("<td><u>single</u>single</td>");
+    table.append("<td><u>single_accounting</u>single_accounting</td>");
+    table.append("<td><u>double</u>double</td>");
+    table.append("<td><u>double_accounting</u>double_accounting</td>");
+    ```
+    ##### ผลลัพธ์ที่ได้คือ
+    [![Capture.png](https://s31.postimg.cc/h4myw66aj/Capture.png)](https://postimg.cc/image/9bwb470bb/)
+    <br><br>
