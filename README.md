@@ -433,6 +433,13 @@
     #2@3# จะมีค่าเท่ากับ B3
     #3@3# จะมีค่าเท่ากับ C3
     ```
+     ```java
+    // รวมค่าของ 20 40 60
+    table.append("<td><type>number</type>20</td>");
+    table.append("<td><type>number</type>40</td>");
+    table.append("<td><type>number</type>60</td>");
+    table.append("<td><type>number</type><formula-no>true</formula-no>SUM(#1@1#:#3@1#)</td>");
+    ```
     ##### ผลลัพธ์ที่ได้คือ
     [![Capture.png](https://s9.postimg.cc/4dmf1dczz/Capture.png)](https://postimg.cc/image/jz3qlboy3/)
     <br><br>
