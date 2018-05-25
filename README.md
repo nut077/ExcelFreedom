@@ -263,5 +263,5 @@
     table.append("<td><font-name>thsarabun_new</font-name>thsarabun_new</td>");
     ```
     ##### ผลลัพธ์ที่ได้คือ
-    [![Capture.png](https://s9.postimg.cc/sbmgj8uy7/Capture.png)](https://postimg.cc/image/fwzoix3fv/)
+   [![Capture.png](https://s9.postimg.cc/sbmgj8uy7/Capture.png)](https://postimg.cc/image/fwzoix3fv/)
     <br><br>
