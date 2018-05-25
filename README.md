@@ -306,10 +306,28 @@
     ```java
     table.append("<td>no underline</td>");
     table.append("<td><u>single</u>single</td>");
-    table.append("<td><u>single_accounting</u>single_accounting</td>");
+    table.append("<td><u>single_accounting</u>single accounting</td>");
     table.append("<td><u>double</u>double</td>");
-    table.append("<td><u>double_accounting</u>double_accounting</td>");
+    table.append("<td><u>double_accounting</u>double accounting</td>");
     ```
     ##### ผลลัพธ์ที่ได้คือ
     [![Capture.png](https://s31.postimg.cc/h4myw66aj/Capture.png)](https://postimg.cc/image/9bwb470bb/)
+    <br><br>
+    
+* **เปลี่ยนประเภทของคอลัมน์**<br>
+ใช้ tag ```<type>รูปแบบตาม list ข้างล่าง<type>``` ค่าเริ่มต้นคือ string
+    - string
+    - number
+    - number-money
+    - number-money-float-one
+    - number-money-float-two
+    ```java
+    table.append("<td>default string</td>");
+    table.append("<td><type>number</type>7777</td>");
+    table.append("<td><type>number-money</type>7777</td>");
+    table.append("<td><type>number-money-float-one</type>7777</td>");
+    table.append("<td><type>number-money-float-two</type>7777</td>");
+    ```
+    ##### ผลลัพธ์ที่ได้คือ
+    [![Capture.png](https://s9.postimg.cc/mrnrdx7z3/Capture.png)](https://postimg.cc/image/pyiaxjsez/)
     <br><br>
