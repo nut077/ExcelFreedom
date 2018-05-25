@@ -404,3 +404,15 @@
     [![Capture.png](https://s9.postimg.cc/m63dvn2bj/Capture.png)](https://postimg.cc/image/67uo5i83f/)
     <br><br>
     
+* **สูตรการคำนวณ ต้องเป็นตัวเลขเท่านั้น**<br>
+ใช้ tag ```<formula>true or false</formula>``` ค่าเริ่มต้นคือ false
+    ```java
+    // รวมค่าของ 20 40 60
+    table.append("<td><type>number</type>20</td>");
+    table.append("<td><type>number</type>40</td>");
+    table.append("<td><type>number</type>60</td>");
+    table.append("<td><type>number</type><formula>true</formula>SUM(A1:C1)</td>");
+    ```
+    ##### ผลลัพธ์ที่ได้คือ
+    [![Capture.png](https://s9.postimg.cc/vhpfshjz3/Capture.png)](https://postimg.cc/image/i0sh9m9nf/)
+    <br><br>
