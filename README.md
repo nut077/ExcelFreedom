@@ -384,6 +384,22 @@
     - violet
     - white
     - yellow
-    ##### ผลลัพธ์ที่ได้คือ
     [![Capture.png](https://s31.postimg.cc/ttqg7s9bf/Capture.png)](https://postimg.cc/image/tgz21lr1j/)
     <br><br>
+    เปลี่ยนสีพื้นหลังคอลัมน์
+    ```java
+    table.append("<td><background-color>orange</background-color>orange</td>");
+    table.append("<td><background-color>green</background-color>green</td>");
+    ```
+    ##### ผลลัพธ์ที่ได้คือ
+    [![Capture.png](https://s9.postimg.cc/n73mkslvz/Capture.png)](https://postimg.cc/image/qdy64f6bv/)
+    <br><br>
+    เปลี่ยนสีตัวอักษร
+    ```java
+    table.append("<td><font-color>orange</font-color>orange</td>");
+    table.append("<td><font-color>green</font-color>green</td>");
+    ```
+    ##### ผลลัพธ์ที่ได้คือ
+    [![Capture.png](https://s9.postimg.cc/m63dvn2bj/Capture.png)](https://postimg.cc/image/67uo5i83f/)
+    <br><br>
+    
