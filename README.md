@@ -247,3 +247,21 @@
     <br><br>
     
 * **เปลี่ยน font**<br>
+ใช้ tag ```<font-name>รูปแบบตาม list ข้างล่าง<font-name>``` ค่าเริ่มต้นคือ arial
+    - arial
+    - tahoma
+    - courier
+    - times
+    - thsarabun_spk
+    - thsarabun_new
+    ```java
+    table.append("<td><font-name>arial</font-name>arial</td>");
+    table.append("<td><font-name>tahoma</font-name>tahoma</td>");
+    table.append("<td><font-name>courier</font-name>courier</td>");
+    table.append("<td><font-name>times</font-name>times</td>");
+    table.append("<td><font-name>thsarabun_spk</font-name>thsarabun_spk</td>");
+    table.append("<td><font-name>thsarabun_new</font-name>thsarabun_new</td>");
+    ```
+    ##### ผลลัพธ์ที่ได้คือ
+    [![Capture.png](https://s9.postimg.cc/sbmgj8uy7/Capture.png)](https://postimg.cc/image/fwzoix3fv/)
+    <br><br>
