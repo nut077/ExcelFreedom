@@ -331,3 +331,59 @@
     ##### ผลลัพธ์ที่ได้คือ
     [![Capture.png](https://s9.postimg.cc/mrnrdx7z3/Capture.png)](https://postimg.cc/image/pyiaxjsez/)
     <br><br>
+    
+* **สี**<br>
+ใช้ tag ```<background-color>รูปแบบตาม list ข้างล่าง<background-color> เมื่อต้องการเปลี่ยนสีพื้นหลัง``` ค่าเริ่มต้นคือ ไม่มีสี
+ใช้ tag ```<font-color>รูปแบบตาม list ข้างล่าง<font-color> เมื่อต้องการเปลี่ยนสีตัวอักษร``` ค่าเริ่มต้นคือ black
+    - aqua
+    - black
+    - blue
+    - blue_grey
+    - bright_green
+    - brown
+    - coral
+    - dark_blue
+    - dark_green
+    - dark_purple
+    - dark_red
+    - dark_teal
+    - dark_yellow
+    - gold
+    - gray_25
+    - gray_50
+    - gray_80
+    - grey_25_percent
+    - grey_40_percent
+    - grey_50_percent
+    - grey_80_percent
+    - green
+    - ice_blue
+    - indigo
+    - ivory
+    - lavender
+    - light_blue
+    - light_green
+    - light_orange
+    - light_turquoise
+    - lime
+    - ocean_blue
+    - ocean_green
+    - orange
+    - pale_blue
+    - periwinkle
+    - pink
+    - plum
+    - red
+    - rose
+    - sea_green
+    - sky_blue
+    - tan
+    - teal
+    - turquoise
+    - very_light_yellow
+    - violet
+    - white
+    - yellow
+    ##### ผลลัพธ์ที่ได้คือ
+    [![Capture.png](https://s31.postimg.cc/ttqg7s9bf/Capture.png)](https://postimg.cc/image/tgz21lr1j/)
+    <br><br>
