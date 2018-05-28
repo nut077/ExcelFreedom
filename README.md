@@ -1,6 +1,7 @@
 ### Tutorial ExcelFreedom
 * **maven**<br>
-```<!-- https://mvnrepository.com/artifact/com.github.nut077/excel-freedom -->
+```
+<!-- https://mvnrepository.com/artifact/com.github.nut077/excel-freedom -->
 <dependency>
     <groupId>com.github.nut077</groupId>
     <artifactId>excel-freedom</artifactId>
