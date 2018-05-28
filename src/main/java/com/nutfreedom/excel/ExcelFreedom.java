@@ -51,25 +51,19 @@ public class ExcelFreedom {
     private CheckFreedom check = new CheckFreedom();
     private SubstringFreedom sub = new SubstringFreedom();
     private HttpServletResponse response = null;
-    private String filename = "";
+    private String fileName = "";
     private JspWriter out = null;
 
     public ExcelFreedom() {
     }
 
-    public ExcelFreedom(String pathFile, String filename, String table) {
+    public ExcelFreedom(String pathFile, String fileName, String table) {
         this.pathFile = pathFile;
-        this.filename = filename;
+        this.fileName = fileName;
         this.table = table;
     }
 
-    public ExcelFreedom(ServletOutputStream pathFileServlet, String table) {
-        this.table = table;
-        this.pathFileServlet = pathFileServlet;
-        this.statusFile = false;
-    }
-
-    public ExcelFreedom(HttpServletResponse response, JspWriter out, String filename, String table) {
+    public ExcelFreedom(HttpServletResponse response, JspWriter out, String fileName, String table) {
         this.table = table;
         try {
             this.pathFileServlet = response.getOutputStream();
@@ -78,7 +72,7 @@ public class ExcelFreedom {
         }
         this.response = response;
         this.out = out;
-        this.filename = filename;
+        this.fileName = fileName;
         this.statusFile = false;
     }
 
@@ -130,12 +124,12 @@ public class ExcelFreedom {
         return defaultHeight;
     }
 
-    public String getFilename() {
-        return filename;
+    public String getFileName() {
+        return fileName;
     }
 
-    public void setFilename(String filename) {
-        this.filename = filename;
+    public void setFileName(String filename) {
+        this.fileName = filename;
     }
 
     public void setDefaultHeight(int defaultHeight) {
@@ -144,7 +138,7 @@ public class ExcelFreedom {
 
     private void setWorkbook() {
         try {
-            this.workbook = Workbook.createWorkbook(new File(this.pathFile + "/" + filename + ".xls"));
+            this.workbook = Workbook.createWorkbook(new File(this.pathFile + "/" + fileName + ".xls"));
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -254,7 +248,7 @@ public class ExcelFreedom {
                 response.setContentType("application/vnd.ms-excel");
                 response.setHeader("Pragma", "public");
                 response.setHeader("Cache-Control", "max-age=0");
-                response.setHeader("Content-Disposition", "attachment; filename=" + filename + ".xls");
+                response.setHeader("Content-Disposition", "attachment; filename=" + fileName + ".xls");
                 try {
                     out.clear();
                 } catch (IOException e) {
