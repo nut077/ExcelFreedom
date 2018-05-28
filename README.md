@@ -466,4 +466,20 @@
     ```
     ##### ผลลัพธ์ที่ได้คือ
     [![Capture.png](https://s33.postimg.cc/ebzdkexfz/Capture.png)](https://postimg.cc/image/ggjqlhz2j/)
+    <br><br>
     
+* **กำหนดค่าเริ่ม**<br>
+    ```java
+    ExcelFreedom excelFreedom = new ExcelFreedom("D://", "excel", table.toString());
+    /*
+        เรียกใช้ก่อน method write()
+    */
+    excelFreedom.write();
+    ```
+    <br>
+    - กำหนดความสูงของคอลัมน์ setDefaultHeight(ความสูง); ตัวอย่าง ``` excelFreedom.setDefaultHeight(700); ```<br>
+    - กำหนดสีตัวอักษร setDefaultHeight(สี); ตัวอย่าง ``` excelFreedom.setDefaultFontColor("red"); ```<br>
+    - กำหนดฟ้อนต์ setDefaultFontName(ฟ้อนต์); ตัวอย่าง ``` excelFreedom.setDefaultFontName("tahoma"); ```<br>
+    - กำหนดขนาดตัวอักษร setDefaultFontSize(ขนาด) ตัวอย่าง ``` excelFreedom.setDefaultFontSize(20); ```<br>
+    - กำหนดรูปแบบ setDefaultFormat(รูปแบบ); ตัวอย่าง ``` excelFreedom.setDefaultFormat("border-left"); ```
+
