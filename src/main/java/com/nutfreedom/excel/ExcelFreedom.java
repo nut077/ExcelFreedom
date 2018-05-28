@@ -54,9 +54,6 @@ public class ExcelFreedom {
     private String fileName = "";
     private JspWriter out = null;
 
-    public ExcelFreedom() {
-    }
-
     public ExcelFreedom(String pathFile, String fileName, String table) {
         this.pathFile = pathFile;
         this.fileName = fileName;
