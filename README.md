@@ -23,7 +23,7 @@
     // parameter ตัวแรกคือที่อยู่ของไฟล์ที่จะสร้าง ตัวที่สองคือชื่อของไฟล์ excel และตัวสุดท้ายคือข้อมูลที่จะเขียนลงในไฟล์ excel
     ExcelFreedom excelFreedom = new ExcelFreedom("D://", "excel", table.toString());
 
-    // ใช้งานแบบ online ไฟล์ jsp
+    // ใช้งานแบบ servlets ไฟล์ jsp
     // parameter ตัวแรกคือ response ตัวที่สองคือ out ตัวที่สามคือชื่อของไฟล์ excel และตัวสุดท้ายคือข้อมูลที่จะเขียนลงในไฟล์ excel
     ExcelFreedom excelFreedom = new ExcelFreedom(response, out, "excel", table.toString());
 
