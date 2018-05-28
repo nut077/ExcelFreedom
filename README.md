@@ -247,7 +247,7 @@
     <br><br>
     
 * **เปลี่ยน font**<br>
-ใช้ tag ```<font-name>รูปแบบตาม list ข้างล่าง<font-name>``` ค่าเริ่มต้นคือ arial
+ใช้ tag ```<font-name>รูปแบบตาม list ข้างล่าง</font-name>``` ค่าเริ่มต้นคือ arial
     - arial
     - tahoma
     - courier
@@ -267,7 +267,7 @@
     <br><br>
     
 * **เปลี่ยนขนาด font**<br>
-ใช้ tag ```<font-size>ขนาด<font-size>``` ค่าเริ่มต้นคือ 10
+ใช้ tag ```<font-size>ขนาด</font-size>``` ค่าเริ่มต้นคือ 10
     ```java
     table.append("<td><font-size>10</font-size>font default</td>");
     table.append("<td><font-size>20</font-size>font size 20</td>");
@@ -277,7 +277,7 @@
     <br><br>
     
 * **ตัวอักษรตัวหนา**<br>
-ใช้ tag ```<b>true or false<b>``` ค่าเริ่มต้นคือ false
+ใช้ tag ```<b>true or false</b>``` ค่าเริ่มต้นคือ false
     ```java
     table.append("<td>font normal</td>");
     table.append("<td><b>true</b>font bold</td>");
@@ -287,7 +287,7 @@
     <br><br>
     
 * **ตัวอักษรตัวเอียง**<br>
-ใช้ tag ```<i>true or false<i>``` ค่าเริ่มต้นคือ false
+ใช้ tag ```<i>true or false</i>``` ค่าเริ่มต้นคือ false
     ```java
     table.append("<td>font normal</td>");
     table.append("<td><i>true</i>font italic</td>");
@@ -297,7 +297,7 @@
     <br><br>
     
 * **ขีดเส้นใต้**<br>
-ใช้ tag ```<u>รูปแบบตาม list ข้างล่าง<u>``` ค่าเริ่มต้นคือ no_underline
+ใช้ tag ```<u>รูปแบบตาม list ข้างล่าง</u>``` ค่าเริ่มต้นคือ no_underline
     - no_underline
     - single
     - single_accounting
@@ -315,7 +315,7 @@
     <br><br>
     
 * **เปลี่ยนประเภทของคอลัมน์**<br>
-ใช้ tag ```<type>รูปแบบตาม list ข้างล่าง<type>``` ค่าเริ่มต้นคือ string
+ใช้ tag ```<type>รูปแบบตาม list ข้างล่าง</type>``` ค่าเริ่มต้นคือ string
     - string
     - number
     - number-money
@@ -333,8 +333,8 @@
     <br><br>
     
 * **สี**<br>
-ใช้ tag ```<background-color>รูปแบบตาม list ข้างล่าง<background-color> เมื่อต้องการเปลี่ยนสีพื้นหลัง``` ค่าเริ่มต้นคือ ไม่มีสี<br>
-ใช้ tag ```<font-color>รูปแบบตาม list ข้างล่าง<font-color> เมื่อต้องการเปลี่ยนสีตัวอักษร``` ค่าเริ่มต้นคือ black
+ใช้ tag ```<background-color>รูปแบบตาม list ข้างล่าง</background-color> เมื่อต้องการเปลี่ยนสีพื้นหลัง``` ค่าเริ่มต้นคือ ไม่มีสี<br>
+ใช้ tag ```<font-color>รูปแบบตาม list ข้างล่าง</font-color> เมื่อต้องการเปลี่ยนสีตัวอักษร``` ค่าเริ่มต้นคือ black
     - aqua
     - black
     - blue
@@ -443,3 +443,23 @@
     ##### ผลลัพธ์ที่ได้คือ
     [![Capture.png](https://s9.postimg.cc/4dmf1dczz/Capture.png)](https://postimg.cc/image/jz3qlboy3/)
     <br><br>
+    
+* **เพิ่มรูปภาพ**<br>
+ใช้ tag ```<img>ที่อยู่ของรูปภาพ</img>```
+    ```java
+    table.append("<td><img>D://image.jpg</img></td>");
+    ```
+    ##### ผลลัพธ์ที่ได้คือ
+    [![Capture.png](https://s33.postimg.cc/5sfzmyubz/Capture.png)](https://postimg.cc/image/y5bhdfg23/)
+    <br><br>
+
+    การปรับขนาดความกว้างความสูง<br>
+    ใช้ tag ```<img-width>ขนาดความกว้าง</img-width>```<br>
+    ใช้ tag ```<img-height>ขนาดความสูง</img-height>```<br>
+    ตัวอย่างเช่น กำหนดความกว้างเท่ากับ 4 และความสูงเท่ากับ 5<br>
+    ```java
+    table.append("<td><img>D://image.jpg</img><img-width>4</img-width><img-height>5</img-height></td>");
+    ```
+    ##### ผลลัพธ์ที่ได้คือ
+    [![Capture.png](https://s33.postimg.cc/ebzdkexfz/Capture.png)](https://postimg.cc/image/ggjqlhz2j/)
+    
