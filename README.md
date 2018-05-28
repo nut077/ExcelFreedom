@@ -1,8 +1,3 @@
-# ExcelFreedom
-[ExcelFreedom.zip](https://github.com/nut077/ExcelFreedom/files/1987460/ExcelFreedom.zip)
-<br>
-[Tutorial.ExcelFreedom.pdf](https://github.com/nut077/ExcelFreedom/files/1987462/Tutorial.ExcelFreedom.pdf)
-
 ### Tutorial ExcelFreedom
 * **รูปแบบการใช้งาน**<br>
 ```<table></table>``` คือ 1 sheet ```<tr></tr>``` คือ 1 แถว ```<td></td>``` คือ 1 column
@@ -247,3 +242,219 @@
     <br><br>
     
 * **เปลี่ยน font**<br>
+ใช้ tag ```<font-name>รูปแบบตาม list ข้างล่าง</font-name>``` ค่าเริ่มต้นคือ arial
+    - arial
+    - tahoma
+    - courier
+    - times
+    - thsarabun_spk
+    - thsarabun_new
+    ```java
+    table.append("<td><font-name>arial</font-name>arial</td>");
+    table.append("<td><font-name>tahoma</font-name>tahoma</td>");
+    table.append("<td><font-name>courier</font-name>courier</td>");
+    table.append("<td><font-name>times</font-name>times</td>");
+    table.append("<td><font-name>thsarabun_spk</font-name>thsarabun_spk</td>");
+    table.append("<td><font-name>thsarabun_new</font-name>thsarabun_new</td>");
+    ```
+    ##### ผลลัพธ์ที่ได้คือ
+    [![Capture.png](https://s9.postimg.cc/sbmgj8uy7/Capture.png)](https://postimg.cc/image/fwzoix3fv/)
+    <br><br>
+    
+* **เปลี่ยนขนาด font**<br>
+ใช้ tag ```<font-size>ขนาด</font-size>``` ค่าเริ่มต้นคือ 10
+    ```java
+    table.append("<td><font-size>10</font-size>font default</td>");
+    table.append("<td><font-size>20</font-size>font size 20</td>");
+    ```
+    ##### ผลลัพธ์ที่ได้คือ
+    [![Capture.png](https://s31.postimg.cc/cdii0oqq3/Capture.png)](https://postimg.cc/image/4kru8pkqv/)
+    <br><br>
+    
+* **ตัวอักษรตัวหนา**<br>
+ใช้ tag ```<b>true or false</b>``` ค่าเริ่มต้นคือ false
+    ```java
+    table.append("<td>font normal</td>");
+    table.append("<td><b>true</b>font bold</td>");
+    ```
+    ##### ผลลัพธ์ที่ได้คือ
+    [![Capture.png](https://s31.postimg.cc/pvtzqp53v/Capture.png)](https://postimg.cc/image/982ho7ac7/)
+    <br><br>
+    
+* **ตัวอักษรตัวเอียง**<br>
+ใช้ tag ```<i>true or false</i>``` ค่าเริ่มต้นคือ false
+    ```java
+    table.append("<td>font normal</td>");
+    table.append("<td><i>true</i>font italic</td>");
+    ```
+    ##### ผลลัพธ์ที่ได้คือ
+    [![Capture.png](https://s31.postimg.cc/o410vz18b/Capture.png)](https://postimg.cc/image/49ez9um0n/)
+    <br><br>
+    
+* **ขีดเส้นใต้**<br>
+ใช้ tag ```<u>รูปแบบตาม list ข้างล่าง</u>``` ค่าเริ่มต้นคือ no_underline
+    - no_underline
+    - single
+    - single_accounting
+    - double
+    - double_accounting
+    ```java
+    table.append("<td>no underline</td>");
+    table.append("<td><u>single</u>single</td>");
+    table.append("<td><u>single_accounting</u>single accounting</td>");
+    table.append("<td><u>double</u>double</td>");
+    table.append("<td><u>double_accounting</u>double accounting</td>");
+    ```
+    ##### ผลลัพธ์ที่ได้คือ
+    [![Capture.png](https://s31.postimg.cc/h4myw66aj/Capture.png)](https://postimg.cc/image/9bwb470bb/)
+    <br><br>
+    
+* **เปลี่ยนประเภทของคอลัมน์**<br>
+ใช้ tag ```<type>รูปแบบตาม list ข้างล่าง</type>``` ค่าเริ่มต้นคือ string
+    - string
+    - number
+    - number-money
+    - number-money-float-one
+    - number-money-float-two
+    ```java
+    table.append("<td>default string</td>");
+    table.append("<td><type>number</type>7777</td>");
+    table.append("<td><type>number-money</type>7777</td>");
+    table.append("<td><type>number-money-float-one</type>7777</td>");
+    table.append("<td><type>number-money-float-two</type>7777</td>");
+    ```
+    ##### ผลลัพธ์ที่ได้คือ
+    [![Capture.png](https://s9.postimg.cc/mrnrdx7z3/Capture.png)](https://postimg.cc/image/pyiaxjsez/)
+    <br><br>
+    
+* **สี**<br>
+ใช้ tag ```<background-color>รูปแบบตาม list ข้างล่าง</background-color> เมื่อต้องการเปลี่ยนสีพื้นหลัง``` ค่าเริ่มต้นคือ ไม่มีสี<br>
+ใช้ tag ```<font-color>รูปแบบตาม list ข้างล่าง</font-color> เมื่อต้องการเปลี่ยนสีตัวอักษร``` ค่าเริ่มต้นคือ black
+    - aqua
+    - black
+    - blue
+    - blue_grey
+    - bright_green
+    - brown
+    - coral
+    - dark_blue
+    - dark_green
+    - dark_purple
+    - dark_red
+    - dark_teal
+    - dark_yellow
+    - gold
+    - gray_25
+    - gray_50
+    - gray_80
+    - grey_25_percent
+    - grey_40_percent
+    - grey_50_percent
+    - grey_80_percent
+    - green
+    - ice_blue
+    - indigo
+    - ivory
+    - lavender
+    - light_blue
+    - light_green
+    - light_orange
+    - light_turquoise
+    - lime
+    - ocean_blue
+    - ocean_green
+    - orange
+    - pale_blue
+    - periwinkle
+    - pink
+    - plum
+    - red
+    - rose
+    - sea_green
+    - sky_blue
+    - tan
+    - teal
+    - turquoise
+    - very_light_yellow
+    - violet
+    - white
+    - yellow
+    [![Capture.png](https://s31.postimg.cc/ttqg7s9bf/Capture.png)](https://postimg.cc/image/tgz21lr1j/)
+    <br><br>
+    
+    เปลี่ยนสีพื้นหลังคอลัมน์
+    ```java
+    table.append("<td><background-color>orange</background-color>orange</td>");
+    table.append("<td><background-color>green</background-color>green</td>");
+    ```
+    ##### ผลลัพธ์ที่ได้คือ
+    [![Capture.png](https://s9.postimg.cc/n73mkslvz/Capture.png)](https://postimg.cc/image/qdy64f6bv/)
+    <br><br>
+    เปลี่ยนสีตัวอักษร
+    ```java
+    table.append("<td><font-color>orange</font-color>orange</td>");
+    table.append("<td><font-color>green</font-color>green</td>");
+    ```
+    ##### ผลลัพธ์ที่ได้คือ
+    [![Capture.png](https://s9.postimg.cc/m63dvn2bj/Capture.png)](https://postimg.cc/image/67uo5i83f/)
+    <br><br>
+    
+* **สูตรการคำนวณ ต้องเป็นตัวเลขเท่านั้น**<br>
+ใช้ tag ```<formula>true or false</formula>``` ค่าเริ่มต้นคือ false
+    ```java
+    // รวมค่าของ 20 40 60
+    table.append("<td><type>number</type>20</td>");
+    table.append("<td><type>number</type>40</td>");
+    table.append("<td><type>number</type>60</td>");
+    table.append("<td><type>number</type><formula>true</formula>SUM(A1:C1)</td>");
+    ```
+    ##### ผลลัพธ์ที่ได้คือ
+    [![Capture.png](https://s9.postimg.cc/vhpfshjz3/Capture.png)](https://postimg.cc/image/i0sh9m9nf/)
+    <br><br>
+    
+    กรณีใช้สูตรแล้วไม่รู้ว่าเราจะใช้คอลัมน์ ไหน ถึงไหน ให้ใช้ tag ```<formula-no>true or false</formula-no>``` ค่าเริ่มต้นคือ false<br>
+    รูปแบบจะเป็น SUM(#column@row#:#column@row#)<br>
+    ตัวอย่าง<br>
+    [![Capture.png](https://s31.postimg.cc/jl2kfov7v/Capture.png)](https://postimg.cc/image/8y8ra9n2f/)
+    <br>
+    ```
+    #1@1# จะมีค่าเท่ากับ A1
+    #2@1# จะมีค่าเท่ากับ B1
+    #3@1# จะมีค่าเท่ากับ C1
+    #1@2# จะมีค่าเท่ากับ A2
+    #2@2# จะมีค่าเท่ากับ B2
+    #3@2# จะมีค่าเท่ากับ C2
+    #1@3# จะมีค่าเท่ากับ A3
+    #2@3# จะมีค่าเท่ากับ B3
+    #3@3# จะมีค่าเท่ากับ C3
+    ```
+     ```java
+    // รวมค่าของ 20 40 60
+    table.append("<td><type>number</type>20</td>");
+    table.append("<td><type>number</type>40</td>");
+    table.append("<td><type>number</type>60</td>");
+    table.append("<td><type>number</type><formula-no>true</formula-no>SUM(#1@1#:#3@1#)</td>");
+    ```
+    ##### ผลลัพธ์ที่ได้คือ
+    [![Capture.png](https://s9.postimg.cc/4dmf1dczz/Capture.png)](https://postimg.cc/image/jz3qlboy3/)
+    <br><br>
+    
+* **เพิ่มรูปภาพ**<br>
+ใช้ tag ```<img>ที่อยู่ของรูปภาพ</img>```
+    ```java
+    table.append("<td><img>D://image.jpg</img></td>");
+    ```
+    ##### ผลลัพธ์ที่ได้คือ
+    [![Capture.png](https://s33.postimg.cc/5sfzmyubz/Capture.png)](https://postimg.cc/image/y5bhdfg23/)
+    <br><br>
+
+    การปรับขนาดความกว้างความสูง<br>
+    ใช้ tag ```<img-width>ขนาดความกว้าง</img-width>```<br>
+    ใช้ tag ```<img-height>ขนาดความสูง</img-height>```<br>
+    ตัวอย่างเช่น กำหนดความกว้างเท่ากับ 4 และความสูงเท่ากับ 5<br>
+    ```java
+    table.append("<td><img>D://image.jpg</img><img-width>4</img-width><img-height>5</img-height></td>");
+    ```
+    ##### ผลลัพธ์ที่ได้คือ
+    [![Capture.png](https://s33.postimg.cc/ebzdkexfz/Capture.png)](https://postimg.cc/image/ggjqlhz2j/)
+    
