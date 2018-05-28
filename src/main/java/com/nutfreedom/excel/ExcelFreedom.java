@@ -286,7 +286,7 @@ public class ExcelFreedom {
                 boolean isColspan = false;
                 int tmpPlusCol = 0;
                 String data = sub.substring(td[tdCol], 0, td[tdCol].indexOf("</td>"));
-                if (data.equals("") && (!td[tdCol].equals("</td>") && !td[tdCol].equals("</td></tr>") && !td[tdCol].equals("</td></tr></table>")) ) {
+                if (data.equals("") && (!td[tdCol].equals("</td>") && !td[tdCol].equals("</td></tr>") && !td[tdCol].equals("</td></tr></table>"))) {
                     printError("expect </td> but this code => " + td[tdCol]);
                 }
                 if (chkCondition(data, "<colspan>") && chkCondition(data, "<rowspan>")) {
@@ -367,17 +367,17 @@ public class ExcelFreedom {
                     statusFont = true;
                 }
                 String color = defaultFontColor;
-                if (chkCondition(data, "<color>")) {
-                    color = getValueConditionString(data, "<color>", "</color>");
+                if (chkCondition(data, "<font-color>")) {
+                    color = getValueConditionString(data, "<font-color>", "</font-color>");
                     statusFont = true;
                 }
                 String background = "";
-                if (chkCondition(data, "<background>")) {
-                    background = getValueConditionString(data, "<background>", "</background>");
+                if (chkCondition(data, "<background-color>")) {
+                    background = getValueConditionString(data, "<background-color>", "</background-color>");
                     statusFont = true;
                 }
 
-                String wrap = "false";
+                String wrap = "true";
                 if (chkCondition(data, "<wrap>")) {
                     wrap = getValueConditionString(data, "<wrap>", "</wrap>");
                     statusFont = true;
@@ -411,14 +411,14 @@ public class ExcelFreedom {
                 boolean statusImage = false;
                 String imageWidth = "0";
                 String imageHeight = "0";
-                if (chkCondition(data, "<image>")) {
-                    if (chkCondition(data, "<image-width>")) {
-                        imageWidth = getValueConditionString(data, "<image-width>", "</image-width>");
+                if (chkCondition(data, "<img>")) {
+                    if (chkCondition(data, "<img-width>")) {
+                        imageWidth = getValueConditionString(data, "<img-width>", "</img-width>");
                     }
-                    if (chkCondition(data, "<image-height>")) {
-                        imageHeight = getValueConditionString(data, "<image-height>", "</image-height>");
+                    if (chkCondition(data, "<img-height>")) {
+                        imageHeight = getValueConditionString(data, "<img-height>", "</img-height>");
                     }
-                    data = getValueConditionString(data, "<image>", "</image>");
+                    data = getValueConditionString(data, "<img>", "</img>");
                     statusImage = true;
                 }
 
@@ -514,15 +514,6 @@ public class ExcelFreedom {
                         setDataCellFormatNumber(sheet, col, row, parse.parseDouble(data), "number-" + format);
                     }
                     break;
-                case "number-money-float":
-                    if (formula.equals("true")) {
-                        setDataCellFormatNumberFormula(sheet, col, row, data, "number-float-" + format);
-                    } else if (formulaNo.equals("true")) {
-                        setDataCellFormatNumberFormula(sheet, col, row, getNewColumn(data), "number-float-" + format);
-                    } else {
-                        setDataCellFormatNumber(sheet, col, row, parse.parseDouble(data), "number-float-" + format);
-                    }
-                    break;
                 case "number-money-float-one":
                     if (formula.equals("true")) {
                         setDataCellFormatNumberFormula(sheet, col, row, data, "number-float-one-" + format);
@@ -530,6 +521,15 @@ public class ExcelFreedom {
                         setDataCellFormatNumberFormula(sheet, col, row, getNewColumn(data), "number-float-one-" + format);
                     } else {
                         setDataCellFormatNumber(sheet, col, row, parse.parseDouble(data), "number-float-one-" + format);
+                    }
+                    break;
+                case "number-money-float-two":
+                    if (formula.equals("true")) {
+                        setDataCellFormatNumberFormula(sheet, col, row, data, "number-float-two-" + format);
+                    } else if (formulaNo.equals("true")) {
+                        setDataCellFormatNumberFormula(sheet, col, row, getNewColumn(data), "number-float-two-" + format);
+                    } else {
+                        setDataCellFormatNumber(sheet, col, row, parse.parseDouble(data), "number-float-two-" + format);
                     }
                     break;
                 default:
@@ -565,15 +565,6 @@ public class ExcelFreedom {
                         setDataCellFontNumber(sheet, hm, "number-");
                     }
                     break;
-                case "number-money-float":
-                    if (formula.equals("true")) {
-                        setDataCellFontNumberFormula(sheet, hm, "number-float-");
-                    } else if (formulaNo.equals("true")) {
-                        setDataCellFontNumberFormulaNo(sheet, hm, "number-float-");
-                    } else {
-                        setDataCellFontNumber(sheet, hm, "number-float-");
-                    }
-                    break;
                 case "number-money-float-one":
                     if (formula.equals("true")) {
                         setDataCellFontNumberFormula(sheet, hm, "number-float-one-");
@@ -581,6 +572,15 @@ public class ExcelFreedom {
                         setDataCellFontNumberFormulaNo(sheet, hm, "number-float-one-");
                     } else {
                         setDataCellFontNumber(sheet, hm, "number-float-one-");
+                    }
+                    break;
+                case "number-money-float-two":
+                    if (formula.equals("true")) {
+                        setDataCellFontNumberFormula(sheet, hm, "number-float-two-");
+                    } else if (formulaNo.equals("true")) {
+                        setDataCellFontNumberFormulaNo(sheet, hm, "number-float-two-");
+                    } else {
+                        setDataCellFontNumber(sheet, hm, "number-float-two-");
                     }
                     break;
                 default:
