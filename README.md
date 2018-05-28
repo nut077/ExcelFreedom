@@ -1,4 +1,13 @@
 ### Tutorial ExcelFreedom
+* **maven**<br>
+```
+<!-- https://mvnrepository.com/artifact/com.github.nut077/excel-freedom -->
+<dependency>
+    <groupId>com.github.nut077</groupId>
+    <artifactId>excel-freedom</artifactId>
+    <version>1.0.1</version>
+</dependency>
+```
 * **รูปแบบการใช้งาน**<br>
 ```<table></table>``` คือ 1 sheet ```<tr></tr>``` คือ 1 แถว ```<td></td>``` คือ 1 column
     ```java
@@ -14,7 +23,7 @@
     // parameter ตัวแรกคือที่อยู่ของไฟล์ที่จะสร้าง ตัวที่สองคือชื่อของไฟล์ excel และตัวสุดท้ายคือข้อมูลที่จะเขียนลงในไฟล์ excel
     ExcelFreedom excelFreedom = new ExcelFreedom("D://", "excel", table.toString());
 
-    // ใช้งานแบบ online ไฟล์ jsp
+    // ใช้งานแบบ servlets ไฟล์ jsp
     // parameter ตัวแรกคือ response ตัวที่สองคือ out ตัวที่สามคือชื่อของไฟล์ excel และตัวสุดท้ายคือข้อมูลที่จะเขียนลงในไฟล์ excel
     ExcelFreedom excelFreedom = new ExcelFreedom(response, out, "excel", table.toString());
 
@@ -457,4 +466,17 @@
     ```
     ##### ผลลัพธ์ที่ได้คือ
     [![Capture.png](https://s33.postimg.cc/ebzdkexfz/Capture.png)](https://postimg.cc/image/ggjqlhz2j/)
+    <br><br>
     
+* **กำหนดค่าเริ่ม**<br>
+    ```java
+    ExcelFreedom excelFreedom = new ExcelFreedom("D://", "excel", table.toString());
+    // เรียกใช้ก่อน method write()
+    excelFreedom.write();
+    ```
+    - กำหนดความสูงของคอลัมน์ setDefaultHeight(ความสูง); ตัวอย่าง ``` excelFreedom.setDefaultHeight(700); ```<br>
+    - กำหนดสีตัวอักษร setDefaultHeight(สี); ตัวอย่าง ``` excelFreedom.setDefaultFontColor("red"); ```<br>
+    - กำหนดฟ้อนต์ setDefaultFontName(ฟ้อนต์); ตัวอย่าง ``` excelFreedom.setDefaultFontName("tahoma"); ```<br>
+    - กำหนดขนาดตัวอักษร setDefaultFontSize(ขนาด) ตัวอย่าง ``` excelFreedom.setDefaultFontSize(20); ```<br>
+    - กำหนดรูปแบบ setDefaultFormat(รูปแบบ); ตัวอย่าง ``` excelFreedom.setDefaultFormat("border-left"); ```
+
