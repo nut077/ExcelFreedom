@@ -457,7 +457,7 @@
     [![Capture.png](https://s33.postimg.cc/5sfzmyubz/Capture.png)](https://postimg.cc/image/y5bhdfg23/)
     <br><br>
 
-    การปรับขนาดความกว้างความสูง<br>
+    ปรับขนาดความกว้างความสูง<br>
     ใช้ tag ```<img-width>ขนาดความกว้าง</img-width>```<br>
     ใช้ tag ```<img-height>ขนาดความสูง</img-height>```<br>
     ตัวอย่างเช่น กำหนดความกว้างเท่ากับ 4 และความสูงเท่ากับ 5<br>
