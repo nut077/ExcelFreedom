@@ -479,4 +479,3 @@
     - กำหนดฟ้อนต์ setDefaultFontName(ฟ้อนต์); ตัวอย่าง ``` excelFreedom.setDefaultFontName("tahoma"); ```<br>
     - กำหนดขนาดตัวอักษร setDefaultFontSize(ขนาด) ตัวอย่าง ``` excelFreedom.setDefaultFontSize(20); ```<br>
     - กำหนดรูปแบบ setDefaultFormat(รูปแบบ); ตัวอย่าง ``` excelFreedom.setDefaultFormat("border-left"); ```
-
