@@ -468,7 +468,7 @@
     [![Capture.png](https://s33.postimg.cc/ebzdkexfz/Capture.png)](https://postimg.cc/image/ggjqlhz2j/)
     <br><br>
     
-* **กำหนดค่าเริ่ม**<br>
+* **กำหนดค่าเริ่มต้น**<br>
     ```java
     ExcelFreedom excelFreedom = new ExcelFreedom("D://", "excel", table.toString());
     // เรียกใช้ก่อน method write()
@@ -479,3 +479,30 @@
     - กำหนดฟ้อนต์ setDefaultFontName(ฟ้อนต์); ตัวอย่าง ``` excelFreedom.setDefaultFontName("tahoma"); ```<br>
     - กำหนดขนาดตัวอักษร setDefaultFontSize(ขนาด) ตัวอย่าง ``` excelFreedom.setDefaultFontSize(20); ```<br>
     - กำหนดรูปแบบ setDefaultFormat(รูปแบบ); ตัวอย่าง ``` excelFreedom.setDefaultFormat("border-left"); ```
+* **การ deploy**<br>
+    - create your JIRA account https://issues.sonatype.org/secure/Signup!default.jspa
+    - tutorial https://central.sonatype.org/pages/ossrh-guide.html#ossrh-usage-notes
+    - tutorial https://www.youtube.com/watch?v=bxP9IuJbcDQ
+    - tutorial https://www.youtube.com/watch?v=dXR4pJ_zS-0&feature=youtu.be
+    - tutorial https://www.youtube.com/watch?v=0gyF17kWMLg&feature=youtu.be
+    - download https://www.gnupg.org/download/index.html
+    - create file settings.xml in location C:\Users\{user}\.m2
+    - เอาค่ามาจาก User token dashboard https://oss.sonatype.org/#profile;User%20Token
+    ```xml
+      <settings>
+        <servers>
+            <server>
+                <id>ossrh</id>
+                <username>fqu9Yd1D4</username>
+                <password>bKCkw8a+Jv0IRawQxr3x0zXffwkSEQxu7WPKGezDIhJWb</password>
+            </server>
+        </servers>
+      </settings>
+    ```
+    - command maven ต้องไปใส่ใน pom <version>1.0.0-SNAPSHOT</version> ก่อนด้วย
+    - gpg --keyserver hkp://keyserver.ubuntu.com --send-keys 1CAF7CE77B8068D2 key คือ ค่าที่ได้จากโปรแกรม Kleopatra
+    - mvn clean deploy
+    - mvn versions:set -DnewVersion=1.0.0
+    - mvn clean deploy -P release
+    
+    
