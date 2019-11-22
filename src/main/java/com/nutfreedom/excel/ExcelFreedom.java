@@ -60,6 +60,18 @@ public class ExcelFreedom {
         this.table = table;
     }
 
+    public ExcelFreedom(HttpServletResponse response, String fileName, String table) {
+        this.table = table;
+        try {
+            this.pathFileServlet = response.getOutputStream();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        this.response = response;
+        this.fileName = fileName;
+        this.statusFile = false;
+    }
+
     public ExcelFreedom(HttpServletResponse response, JspWriter out, String fileName, String table) {
         this.table = table;
         try {
@@ -229,7 +241,7 @@ public class ExcelFreedom {
         for (int tableRow = 1; tableRow < table.length; tableRow++) {
             clearDetail();
             this.setDetail(table[tableRow]);
-            String sheetName = "sheet " + String.valueOf(excelSheetIndex + 1);
+            String sheetName = "sheet " + (excelSheetIndex + 1);
             if (check.isHaveData(table[tableRow], "<sheet>")) {
                 sheetName = check.setValueNotBlank(getValueConditionString(table[tableRow], "<sheet>", "</sheet>"), sheetName);
             }
@@ -246,12 +258,13 @@ public class ExcelFreedom {
                 response.setHeader("Pragma", "public");
                 response.setHeader("Cache-Control", "max-age=0");
                 response.setHeader("Content-Disposition", "attachment; filename=" + fileName + ".xls");
-                try {
-                    out.clear();
-                } catch (IOException e) {
-                    e.printStackTrace();
+                if (out != null) {
+                    try {
+                        out.clear();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
                 }
-
             }
         }
     }
@@ -284,7 +297,7 @@ public class ExcelFreedom {
                     int colspan = getValueConditionInt(data, "<colspan>", "</colspan>") - 1;
                     plusCol += colspan;
                     int rowspan = getValueConditionInt(data, "<rowspan>", "</rowspan>") - 1;
-                    this.span.addElement(col + "#" + row + "#" + String.valueOf(col + colspan) + "#" + String.valueOf(row + rowspan));
+                    this.span.addElement(col + "#" + row + "#" + (col + colspan) + "#" + (row + rowspan));
 
                     boolean first = true;
                     for (int i = col; i <= col + colspan; i++) {
@@ -293,7 +306,7 @@ public class ExcelFreedom {
                             if (first) {
                                 first = false;
                             } else {
-                                used.addElement(i + "#" + String.valueOf(row + line));
+                                used.addElement(i + "#" + (row + line));
                             }
                             line++;
                         }
@@ -303,7 +316,7 @@ public class ExcelFreedom {
                     int colspan = getValueConditionInt(data, "<colspan>", "</colspan>") - 1;
                     plusCol += colspan;
                     col = chkCellDuplicate(used, col + "#" + row, plusCol);
-                    this.span.addElement(col + "#" + row + "#" + String.valueOf(col + colspan) + "#" + row);
+                    this.span.addElement(col + "#" + row + "#" + (col + colspan) + "#" + row);
                     for (int i = col; i < col + colspan; i++) {
                         used.addElement(i + "#" + row);
                     }
@@ -312,11 +325,11 @@ public class ExcelFreedom {
                 } else if (chkCondition(data, "<rowspan>")) {
                     int rowspan = getValueConditionInt(data, "<rowspan>", "</rowspan>") - 1;
                     col = chkCellDuplicate(used, col + "#" + row, plusCol);
-                    this.span.addElement(col + "#" + row + "#" + col + "#" + String.valueOf(row + rowspan));
+                    this.span.addElement(col + "#" + row + "#" + col + "#" + (row + rowspan));
 
                     int tmp = 1;
                     for (int i = row; i < row + rowspan; i++) {
-                        used.addElement(col + "#" + String.valueOf(row + tmp));
+                        used.addElement(col + "#" + (row + tmp));
                         tmp++;
                     }
                 }

@@ -4,7 +4,7 @@
 
     <groupId>com.github.nut077</groupId>
     <artifactId>excel-freedom</artifactId>
-    <version>1.0.2</version>
+    <version>1.0.3</version>
     <build>
         <plugins>
             <plugin>
@@ -138,7 +138,7 @@
         <dependency>
             <groupId>javax.servlet.jsp</groupId>
             <artifactId>javax.servlet.jsp-api</artifactId>
-            <version>2.3.1</version>
+            <version>2.3.3</version>
         </dependency>
 
         <dependency>
